@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Operator Sheet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="logo-link">
+    <a id="logo-link" href="operator_list.html">
+      <img id="titleLogo" src="Images/RecruitmentLogo.png" alt="Title Logo">
+    </a>   
+  </div>  
+
+  <div class="single-container">
+    <!-- codename -->
+    <div class="iconAndName-container">
+      <img id="operatorIcon" class="pointer" src="Icons/defaultIcon.png" alt="Icon">
+      <input type="file" id="fileInput" accept="image/*" style="display: none;">
+      <span id="codename" class="editable-text-codename" tabindex="0">CODENAME</span>
+    </div>
+    <!-- side -->
+    <div id="side-container">
+      <span id="side-label">SIDE</span>
+      <img id="side-image" src="Images/sideAttacker.png" alt="Side icon">
+      <span id="side-text">ATTACKER</span>
+    </div>
+    <!-- squad -->
+    <div id="squad-container">
+      <label id="squad-label">SQUAD</label>
+      <select id="squad-select" style="display:none;">
+        <option value="REDHAMMER" data-img="Images/redhammer.png">REDHAMMER</option>
+        <option value="VIPERSTRIKE" data-img="Images/viperstrike.png">VIPERSTRIKE</option>
+        <option value="GHOSTEYES" data-img="Images/ghosteyes.png">GHOSTEYES</option>
+        <option value="WOLFGUARD" data-img="Images/wolfguard.png">WOLFGUARD</option>
+        <option value="NIGHTHAVEN" data-img="Images/nighthaven.png">NIGHTHAVEN</option>
+        <option value="KERES" data-img="Images/keres.png">KERES</option>
+      </select>
+      <img id="squad-image" src='' alt="Squad icon">
+      <span id="squad-text"></span>
+    </div>
+    <!-- specialty -->
+    <div id="specialty-container">
+      <label id="specialty-label">SPECIALTY</label>
+      <div class="specialty-divider"></div>
+      <div id="specialty-options" style="display:none;">
+        <label> <input type="checkbox" value="FRONT LINE"> FRONT LINE (atk)</label><br>
+        <label> <input type="checkbox" value="BREACH"> BREACH (atk)</label><br>
+        <label> <input type="checkbox" value="MAP CONTROL"> MAP CONTROL (atk)</label><br>
+        <label> <input type="checkbox" value="SUPPORT"> SUPPORT</label><br>
+        <label> <input type="checkbox" value="ANTI-GADGET"> ANTI-GADGET</label><br>
+        <label> <input type="checkbox" value="INTEL"> INTEL</label><br>
+        <label> <input type="checkbox" value="ANTI-ENTRY"> ANTI-ENTRY (def)</label><br>
+        <label> <input type="checkbox" value="TRAPPER"> TRAPPER (def)</label><br>
+        <label> <input type="checkbox" value="CROWD CONTROL"> CROWD CONTROL (def)</label><br>
+      </div>
+      <p id="specialty-output" class="specialty-output"></p>
+    </div>
+    <!-- health speed -->
+    <div id="health-speed-container">
+      <div class="health-speed-item">
+        <span id="health-label">HEALTH</span>
+        <div class="health-speed-divider"></div>
+        <img id="health-image" src="Images/healthspeedPoints2.png" alt="Health points">
+      </div>
+      <div class="health-speed-item">
+        <span id="speed-label">SPEED</span>
+        <div class="health-speed-divider"></div>
+        <img id="speed-image" src="Images/healthspeedPoints2.png" alt="Speed points">
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title-loadout-loadout">LOADOUT</h1>
+  <div class="triple-container">
+    <div class="section-triple">
+      <h2 class="title-loadout pointer primaryWeapon">PRIMARY WEAPON</h2>
+      <select class="category-select" data-type="primaryWeapon" style="display: none;"></select>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout pointer secondaryWeapon">SECONDARY WEAPON</h2>
+      <select class="category-select" data-type="secondaryWeapon" style="display: none;"></select>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout pointer gadget">GADGET</h2>
+      <select class="category-select" data-type="gadget" style="display: none;"></select>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout pointer uniqueAbility">UNIQUE ABILITY</h2>
+    </div>
+  </div>  
+
+  <div class="triple-container">
+    <div class="section-triple">
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="primaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="primaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="primaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="secondaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="secondaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="secondaryWeapon"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="gadget"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="gadget"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+      <div class="grid-triple">
+        <select class="weapon-select" data-type="gadget"> </select>
+        <img class="loadout pointer" src="Empty.png" alt="">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="ability-icon loadout pointer" src="Images/UniqueAbility.png" alt="UniqueAbility">
+        <input type="file" class="ability-input" accept="image/*" style="display:none;">
+      </div>
+    </div>      
+  </div>
+
+  <script src="weapons.js"></script>
+  <script src="operatorLoadout.js"></script>
+  <script src="operatorInfo.js"></script>
+
+  <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
+  <textarea id="description_area" spellcheck="false" placeholder="Description"></textarea>
+
+  <h1 class="title-biography">BIOGRAPHY</h1>
+  <textarea id="biography_area" spellcheck="false" placeholder="Biography"></textarea>
+
+  <script>
+    document.querySelectorAll(".ability-icon").forEach((img, index) => {
+      const input = document.querySelectorAll(".ability-input")[index];
+      img.addEventListener("click", () => input.click());
+      input.addEventListener("change", event => {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = e => img.src = e.target.result;
+          reader.readAsDataURL(file);
+        }
+      });
+    });
+
+    document.querySelectorAll("#description_area, #biography_area").forEach(textarea => {
+      textarea.addEventListener("input", () => {
+        textarea.style.height = "auto";
+        textarea.style.height = textarea.scrollHeight + "px";
+      });
+      // ustaw początkową wysokość na podstawie zawartości
+      textarea.style.height = textarea.scrollHeight + "px";
+    });
+  </script>
+
+</body>
+</html>
