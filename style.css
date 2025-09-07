@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.header img {
+  max-width: 700px;
+}
+
+#titleLogo {
+  width: 100%;
+}
+
+a#logo-link {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo-link{
+  width: 20%;
+  margin-left: 12%;
+  margin-top: 20px;
+  display: block;
+}
+
+.dual-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.triple-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0% 5%;
+  border: 0px solid white;
+  padding: 0px;
+}
+
+.section-dual {
+  margin: 0px;
+  width: 50%;
+  max-width: none;
+}
+
+.section-triple {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: 5px 0%;
+  border: 0px solid green;
+  width: 25%;
+}
+
+.title-loadout,
+.title-loadout-operator {
+  font-size: 24px;
+  display: inline-block;
+  padding: 0px 0px;
+  border-radius: 0px;
+  color: #b0bac6;
+}
+.title-ability {
+  font-size: 48px;
+  margin: 20px 0px;
+}
+
+.title-loadout:hover {
+  color: #FFB12B;
+}
+
+.attack {
+  background-color: #2196F3;
+}
+
+.defense {
+  background-color: #FF9800;
+}
+
+.grid-dual {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  padding: 0px;
+}
+
+.grid-triple {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0px solid red;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px;
+}
+
+.square {
+  width: 130px;
+  height: 130px;
+  border: 0px solid #888;
+  border-radius: 0px;
+  transition: transform 0.2s;
+  display: block;
+  margin: 0px;
+}
+
+.square:hover {
+  transform: scale(1.1);
+}
+
+#operatorIcon{
+  height: 120px;
+  width: 120px;
+}
+
+.weapon-select {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 94%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.loadout {
+  max-height: 180px;
+  width: 94%;
+  height: auto;
+  margin: 10px 0px;
+  display: block;
+  border: 1px solid #b0bac6;
+  background-color: #090f19;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.loadout[src=""],
+.loadout[src$="Empty.png"] {
+  margin: 0px;
+  border: none;
+  pointer-events: none;
+}
+
+ select option.option-main {
+  background-color: #111C36;
+  color: white;
+  font-weight: bold;
+}
+
+select option.option-sub {
+  background-color: #3D507A;
+  color: white;
+  font-style: italic;
+}
+
+select option.option-weapon {
+  background-color: #4C756A;
+  color: white;
+}
+
+select option.option-empty {
+  background-color: #C46D5A;
+  color: white;
+}
+
+.side-select {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  appearance: none;
+}
+.side-select:focus {
+  outline: none;
+}
+
+.iconAndName-container{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 0px;
+}
+
+.single-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 20px 10%;
+  padding: 15px;
+  border: 0px solid red;
+  width: 40%;
+}
+
+#side-container,
+#squad-container {
+  display: flex;
+  align-items: center;
+  border: 0px solid red;
+}
+#specialty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 0px solid red;
+  gap: 4px;
+}
+#health-speed-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  border: 0px solid red;
+  width: 100%;
+}
+
+#side-label-operator,
+#squad-label-operator,
+#specialty-label-operator,
+#health-label-operator,
+#speed-label-operator,
+#side-label,
+#squad-label,
+#specialty-label,
+#health-label,
+#speed-label {
+  color: #ff3d2c;
+  font-weight: bold;
+  margin: 0;
+  border: 0px solid yellow;
+}
+#side-label:hover,
+#squad-label:hover,
+#specialty-label:hover,
+#health-label:hover,
+#speed-label:hover {
+  cursor: pointer;
+  color: #FFB12B;
+}
+
+#codename,
+#side-text,
+#squad-text,
+#specialty-output {
+  color: #b0bac6;
+}
+
+#side-image{
+  width: 30px;
+  height: 30px;
+  margin: 0px 11px;
+}
+#squad-image {
+  width: 40px;
+  height: 40px;
+  margin: 0px 11px;
+}
+
+.static-text, 
+.editable-text-codename {
+  font-size: 48px;
+  font-weight: bold;
+}
+.editable-text-codename:hover {
+  cursor: pointer;
+  color: #FFB12B;
+}
+
+.specialty-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #b0bac6;
+  margin: 1px 0px 3px 0px;
+}
+
+.health-speed-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #b0bac6;
+  margin: 5px 0px 7px 0px;
+  align-self: flex-start;
+  border: 0px solid green;
+}
+
+.health-speed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+  border: 0px solid blue;
+  width: 100%;
+}
+
+.specialty-output {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #b0bac6;
+  text-align: center;
+  border: 0px solid orange;
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+  font-weight: bold;
+}
+
+ #description,
+ #description_area,
+ #biography_area {
+  color: #b0bac6;
+  width: 76%;
+  border: 1px solid #b0bac6;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #090f19;
+  resize: none;
+  font-size: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
