@@ -119,7 +119,7 @@ const primaryWeapons = {
       { name: 'SUPERNOVA', value: 'Weapons/SUPERNOVA.png' },
     ],
     " -- CUSTOM WEAPON -- ": [ 
-      { name: 'ESCORT BTS12', value: 'Weapons/ESCORT BTS12.png' },
+      { name: 'BTS12', value: 'Weapons/BTS12.png' },
       { name: 'JACKHAMMER', value: 'Weapons/JACKHAMMER.png' },
     ],
   },
