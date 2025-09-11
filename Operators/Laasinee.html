@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Operator Laasinee</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="logo-link">
+    <a id="logo-link" href="../index.html">
+      <img id="titleLogo" src="../Images/RecruitmentLogo.png" alt="Title Logo">
+    </a>   
+  </div>  
+
+  <div class="single-container">
+    <!-- codename -->
+    <div class="iconAndName-container">
+      <img id="operatorIcon" src="../Icons/LAASINEE.png" alt="Icon">
+      <span id="codename" class="static-text">LAASINEE</span>
+    </div>
+    <!-- side -->
+    <div id="side-container">
+      <span id="side-label-operator">SIDE</span>
+      <img id="side-image" src="../Images/sideDefender.png" alt="Side icon">
+      <span id="side-text">DEFENDER</span>
+    </div>
+    <!-- squad -->
+    <div id="squad-container">
+      <span id="squad-label-operator">SQUAD</span>
+      <img id="squad-image" src="../Images/ghosteyes.png" alt="Squad icon">
+      <span id="squad-text">GHOSTEYES</span>
+    </div>
+    <!-- specialty -->
+    <div id="specialty-container">
+      <span id="specialty-label-operator">SPECIALTY</span>
+      <div class="specialty-divider"></div>
+      <p id="specialty-output" class="specialty-output">SUPPORT, INTEL</p>
+    </div>
+    <!-- health speed -->
+    <div id="health-speed-container">
+      <div class="health-speed-item">
+        <span id="health-label-operator">HEALTH</span>
+        <div class="health-speed-divider"></div>
+        <img id="health-image" src="../Images/healthspeedPoints2.png" alt="Health points">
+      </div>
+      <div class="health-speed-item">
+        <span id="speed-label-operator">SPEED</span>
+        <div class="health-speed-divider"></div>
+        <img id="speed-image" src="../Images/healthspeedPoints2.png" alt="Speed points">
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title-loadout-loadout">LOADOUT</h1>
+  <div class="triple-container">
+    <div class="section-triple">
+      <h2 class="title-loadout-operator primaryWeapon">PRIMARY WEAPON</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator secondaryWeapon">SECONDARY WEAPON</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator gadget">GADGET</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator uniqueAbility">UNIQUE ABILITY</h2>
+    </div>
+  </div>  
+
+  <div class="triple-container">
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/UMP45.png" alt="UMP45">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/FO-12.png" alt="FO-12">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/P10-C.png" alt="P10-C">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/C75 AUTO.png" alt="C75 AUTO">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/NITRO CELL.png" alt="NITRO CELL">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/PROXIMITY ALARM.png" alt="PROXIMITY ALARM">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="ability-icon loadout" src="../UniqueAbilities/UniqueAbility.png" alt="UniqueAbility">
+      </div>
+    </div>  
+  </div>
+
+  <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
+<textarea id="description" readonly spellcheck="false" style="overflow:hidden;">
+Unique Ability: Spiderling Mine Transporter
+
+Laasinee deploys a spider-shaped drone that can be controlled like a regular drone. It can move on any surface, including floors, walls, ceilings, and furniture. However, it cannot jump and lacks a speed boost function like standard drones.
+In addition to serving as a camera, the Spiderling can pick up and transport small, soft-mounted gadgets from both defenders and attackers.
+
+Supported Gadgets 
+- Defender Gadgets: Smoke's Remote Gas Grenade, Valkyrie’s Black Eye, Echo’s Yokai, Lesion’s GU, Ela’s Grzmot Mine, Alibi’s Prisma, Kaid’s Electroclaw, Mozzie’s Pest, Wamai’s Mag-NET, Thorn’s Razorbloom, Azami’s Kiba Barrier (only if the kunai bounces off a player or gadget and lands on the ground without activating), Fenrir’s F-Natt Dread Mine, Nitro Cell, Proximity Alarm
+- Attacker Gadgets: Thatcher’s EMP Grenade, A single grenade from Fuze's Cluster Charge, Twitch’s Shock Drone, A single X-Kairos pellet from Hibana, Ying’s Candela (only if thrown), Nomad’s Airjab, Ace’s S.E.L.M.A. (only if it lands on a non-destructible surface and does not activate), Sens’ R.O.U. Projector Disc, Brava’s Kludge Drone, Frag Grenade, Stun Grenade, Smoke Grenade, Regular Drones
+
+The Spiderling cannot pick up:
+- Large gadgets (e.g., Frost's Welcome Mat, Jäger's ADS)
+- Hard-mounted gadgets (e.g., Kapkan’s EDD, Rauora's D.O.M. Panel)
+- Impact-based gadgets (e.g., Impact Grenades, Zofia’s Grenades)
+
+The Spiderling cannot activate or trigger the explosion of any gadget it picks up.
+- Proximity-based gadgets (e.g., Grzmot Mine, Airjab) will still trigger when an enemy enters their range.
+- Player-activated gadgets (e.g., Smoke Canister, Nitro Cell) must still be activated by the player who deployed them.
+- Timed gadgets (e.g., EMP Grenade, Frag Grenade) can be picked up if done quickly, but their timer will not stop or reset.
+
+The Spiderling can carry only one item at a time and can drop it at any moment.
+  
+Destruction: 
+- The Spiderling can be destroyed by gunfire, melee, explosives, and enemy gadgets. 
+- If the gadget being carried explodes, it destroys the Spiderling. 
+- It is not destroyed by non-damaging explosions (e.g., Grzmot, Airjab). 
+- The Spiderling and the carried gadget have separate hitboxes: 
+  - If the gadget is destroyed (e.g., shot), the Spiderling remains intact. 
+  - If the Spiderling is destroyed, the gadget is dropped on the ground.
+
+Interactions: - Detected by IQ’s Electronics Detector 
+- Can be shot by Twitch’s Shock Drone 
+- Affected by EMP 
+- Dokkaebi can hack into its camera feed 
+- Nøkk can remain undetected by it 
+- Can fit under door barricades and Rauora's D.O.M. Panels 
+- Loses signal outside of buildings 
+- Can be frozen by Tubarão's Zoto Canister 
+- Can be jammed by hacked by Brava Mute’s Signal Disruptor 
+- Cannot see through hacked by Brava Observation Blockers 
+- Can be hacked by Brava’s Kludge Drone and if so: 
+  - Can be hacked back by Mozzie’s Pest 
+  - Can be jammed by Mute’s Signal Disruptor 
+  - Cannot see through Observation Blockers 
+  - Vigil can remain undetected by it 
+  - Affected by Bulletproof Camera EMP 
+  - Detected by Solis’ Spec-IO Electro-Sensor 
+  - Destroyed by contact with electrified surfaces
+
+Laasinee starts with 1 Spiderling and gains another every 45 seconds.
+</textarea>
+  
+  <h1 class="title-biography">BIOGRAPHY</h1>
+<textarea id="description" readonly spellcheck="false" style="overflow:hidden;">
+</textarea>
+  
+  <script>
+    const ta = document.getElementById('description');
+    const fit = () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
+    document.addEventListener('DOMContentLoaded', fit);
+    window.addEventListener('load', fit);
+    window.addEventListener('resize', fit);
+  </script>
+
+</body>
+</html>
