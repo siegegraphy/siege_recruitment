@@ -340,3 +340,10 @@ h2 {
   overflow: hidden;
   margin-bottom: 20px;
 }
+
+#opis {
+color: #b0bac6;
+border: 1px solid #b0bac6;
+padding: 15px;
+background-color: #090f19;
+}
