@@ -129,16 +129,24 @@ Special Interactions
 </textarea>
   
   <h1 class="title-biography">BIOGRAPHY</h1>
-<textarea id="description" readonly spellcheck="false" style="overflow:hidden;">
+<textarea id="biography" readonly spellcheck="false" style="overflow:hidden;">
 
 </textarea>
   
   <script>
-    const ta = document.getElementById('description');
-    const fit = () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
-    document.addEventListener('DOMContentLoaded', fit);
-    window.addEventListener('load', fit);
-    window.addEventListener('resize', fit);
+    const textareas = [
+      document.getElementById('description'),
+      document.getElementById('biography')
+    ].filter(Boolean);
+    const fit = (ta) => {
+      ta.style.height = 'auto';
+      ta.style.height = ta.scrollHeight + 'px';
+    };
+    const fitAll = () => textareas.forEach(fit);
+    document.addEventListener('DOMContentLoaded', fitAll);
+    window.addEventListener('load', fitAll);
+    window.addEventListener('resize', fitAll);
+    textareas.forEach(ta => ta.addEventListener('input', () => fit(ta)));
   </script>
 
 </body>
