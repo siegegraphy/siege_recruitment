@@ -121,6 +121,7 @@ const primaryWeapons = {
     " -- CUSTOM WEAPON -- ": [ 
       { name: 'BTS12', value: 'Weapons/BTS12.png' },
       { name: 'JACKHAMMER', value: 'Weapons/JACKHAMMER.png' },
+      { name: 'RMB-93', value: 'Weapons/RMB-93.png' },
     ],
   },
   "======== SHIELD ========": {
