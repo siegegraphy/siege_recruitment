@@ -91,6 +91,7 @@ const primaryWeapons = {
       { name: 'VECTOR .45 ACP', value: 'Weapons/VECTOR .45 ACP.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
+      { name: 'PP-19', value: 'Weapons/PP-19.png' },
       { name: 'THOMPSON MK2', value: 'Weapons/THOMPSON MK2.png' },
     ],
   },
@@ -160,6 +161,7 @@ const secondaryWeapons = {
       { name: 'SPSMG9', value: 'Weapons/SPSMG9.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
+      { name: 'SCORPION VZ.61', value: 'Weapons/SCORPION VZ.61.png' },
     ],
   },
   "======== REVOLVER ========": {
