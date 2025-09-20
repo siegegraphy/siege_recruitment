@@ -206,6 +206,7 @@ const secondaryWeapons = {
       { name: 'GONNE-6', value: 'Weapons/GONNE-6.png' },
     ],
     " -- CUSTOM WEAPON -- ": [ 
+      { name: 'TSL-14', value: 'Weapons/TSL-14.png' },
     ],
   },
 };
