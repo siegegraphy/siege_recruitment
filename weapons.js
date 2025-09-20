@@ -45,6 +45,8 @@ const primaryWeapons = {
       { name: 'T-95 LSW', value: 'Weapons/T-95 LSW.png' },
     ],
     " -- CUSTOM WEAPON -- ": [ 
+      { name: 'F-011', value: 'Weapons/F-011.png' },
+      { name: 'FN EVOLYS', value: 'Weapons/FN EVOLYS.png' },
     ],
   },
   "======== MARKSMAN RIFLE ========": {
