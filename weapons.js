@@ -30,6 +30,7 @@ const primaryWeapons = {
     ],
     " -- CUSTOM WEAPON -- ": [
       { name: 'LVOA', value: 'Weapons/LVOA.png' },
+      { name: 'THOMPSON TYPE.PDW', value: 'Weapons/THOMPSON TYPE.PDW.png' },
     ],
   },
   "======== LIGHT MACHINE GUN ========": {
