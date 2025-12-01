@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="logo-link">
+    <a id="logo-link" href="index.html">
+      <img id="titleLogo" src="Images/RecruitmentLogo.png" alt="Title Logo">
+    </a>
+  </div>
+
+  <div class="single-container">
+
+    <div class="iconAndName-container">
+      <img id="operatorIcon" src="" alt="Icon">
+      <span id="codename" class="static-text"></span>
+    </div>
+
+    <div id="side-container">
+      <span id="side-label-operator">SIDE</span>
+      <img id="side-image" src="">
+      <span id="side-text"></span>
+    </div>
+
+    <div id="squad-container">
+      <span id="squad-label-operator">SQUAD</span>
+      <img id="squad-image" src="">
+      <span id="squad-text"></span>
+    </div>
+
+    <div id="specialty-container">
+      <span id="specialty-label-operator">SPECIALTY</span>
+      <div class="specialty-divider"></div>
+      <p id="specialty-output" class="specialty-output"></p>
+    </div>
+
+    <div id="health-speed-container">
+      <div class="health-speed-item">
+        <span id="health-label-operator">HEALTH</span>
+        <div class="health-speed-divider"></div>
+        <img id="health-image" src="">
+      </div>
+      <div class="health-speed-item">
+        <span id="speed-label-operator">SPEED</span>
+        <div class="health-speed-divider"></div>
+        <img id="speed-image" src="">
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title-loadout-loadout">LOADOUT</h1>
+
+  <div class="triple-container">
+    <div class="section-triple">
+      <h2 class="title-loadout-operator">PRIMARY WEAPON</h2>
+      <div id="primaryWeaponList"></div>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator">SECONDARY WEAPON</h2>
+      <div id="secondaryWeaponList"></div>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator">GADGET</h2>
+      <div id="gadgetList"></div>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator">UNIQUE ABILITY</h2>
+      <img id="unique-ability-icon" class="ability-icon loadout" src="">
+    </div>
+  </div>
+
+  <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
+  <textarea id="description" readonly></textarea>
+
+  <h1 class="title-biography">BIOGRAPHY</h1>
+  <textarea id="biography" readonly></textarea>
+
+  <script>
+async function loadOperator() {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+
+  const res = await fetch("data/operators.json");
+  const data = await res.json();
+
+  const op = data[name];
+  if (!op) {
+    document.body.innerHTML = "<h1>Operator not found</h1>";
+    return;
+  }
+
+  document.getElementById("operatorIcon").src = op.icon;
+  document.getElementById("codename").textContent = op.codename;
+
+  document.getElementById("side-text").textContent = op.side;
+  document.getElementById("side-image").src = op.sideIcon;
+
+  document.getElementById("squad-text").textContent = op.squad;
+  document.getElementById("squad-image").src = op.squadIcon;
+
+  document.getElementById("specialty-output").textContent = op.specialty;
+
+  document.getElementById("health-image").src = "Images/healthspeedPoints" + op.health + ".png";
+  document.getElementById("speed-image").src = "Images/healthspeedPoints" + op.speed + ".png";
+
+  loadImages("primaryWeaponList", op.primaryWeapons);
+  loadImages("secondaryWeaponList", op.secondaryWeapons);
+  loadImages("gadgetList", op.gadgets);
+
+  document.getElementById("unique-ability-icon").src = op.uniqueAbilityIcon;
+
+  document.getElementById("description").value = op.description;
+  document.getElementById("biography").value = op.biography;
+}
+
+function loadImages(containerId, list) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+  list.forEach(src => {
+    const img = document.createElement("img");
+    img.className = "loadout";
+    img.src = src;
+    container.appendChild(img);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", loadOperator);
+  </script>
+
+</body>
+</html>
