@@ -1,17 +1,17 @@
 {
   "codename": "GOATHEAD",
-  "icon": "../Icons/Goathead.png",
+  "icon": "/Icons/Goathead.png",
   "side": {
     "text": "ATTACKER",
     "image": "../Images/sideAttacker.png"
   },
   "squad": {
     "text": "VIPERSTRIKE",
-    "image": "../Images/viperstrike.png"
+    "image": "/Images/viperstrike.png"
   },
   "specialty": "MAP CONTROL, INTEL",
   "health": "../Images/healthspeedPoints1.png",
-  "speed": "../Images/healthspeedPoints3.png",
+  "speed": "/Images/healthspeedPoints3.png",
   "primaryWeapons": ["../Weapons/F90.png","../Weapons/M870.png"],
   "secondaryWeapons": ["../Weapons/USP40.png"],
   "gadgets": ["../Weapons/BREACH CHARGE.png","../Weapons/SMOKE GRENADE.png"],
