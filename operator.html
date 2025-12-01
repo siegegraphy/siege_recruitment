@@ -96,7 +96,7 @@
         return;
       }
 
-      const data = await fetch(`operators/${op}.json`).then(r => r.json());
+      const data = await fetch(`Operators/${op}.json`).then(r => r.json());
 
       document.getElementById("operatorIcon").src = data.icon;
       document.getElementById("codename").textContent = data.codename;
