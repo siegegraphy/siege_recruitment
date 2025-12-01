@@ -1,38 +1,21 @@
 {
   "codename": "GOATHEAD",
   "icon": "../Icons/Goathead.png",
-
   "side": {
     "text": "ATTACKER",
     "image": "../Images/sideAttacker.png"
   },
-
   "squad": {
     "text": "VIPERSTRIKE",
     "image": "../Images/viperstrike.png"
   },
-
   "specialty": "MAP CONTROL, INTEL",
-
   "health": "../Images/healthspeedPoints1.png",
   "speed": "../Images/healthspeedPoints3.png",
-
-  "primaryWeapons": [
-    "../Weapons/F90.png",
-    "../Weapons/M870.png"
-  ],
-
-  "secondaryWeapons": [
-    "../Weapons/USP40.png"
-  ],
-
-  "gadgets": [
-    "../Weapons/BREACH CHARGE.png",
-    "../Weapons/SMOKE GRENADE.png"
-  ],
-
+  "primaryWeapons": ["../Weapons/F90.png","../Weapons/M870.png"],
+  "secondaryWeapons": ["../Weapons/USP40.png"],
+  "gadgets": ["../Weapons/BREACH CHARGE.png","../Weapons/SMOKE GRENADE.png"],
   "uniqueAbility": "../UniqueAbilities/BURR TRACKERS.png",
-
-  "description": "Unique Ability: Burr Trackers x4\n\nGoathead throws a disc that bounces...",
+  "description": "Unique Ability: Burr Trackers x4 ...",
   "biography": "Tu wpiszesz opis biograficzny"
 }
