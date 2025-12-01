@@ -56,6 +56,7 @@ const primaryWeapons = {
       { name: 'CAMRS', value: 'Weapons/CAMRS.png' },
       { name: 'MK 14 EBR', value: 'Weapons/MK 14 EBR.png' },
       { name: 'OTS-03', value: 'Weapons/OTS-03.png' },
+      { name: 'PMR90A2', value: 'Weapons/PMR90A2.png' },
       { name: 'SR-25', value: 'Weapons/SR-25.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
