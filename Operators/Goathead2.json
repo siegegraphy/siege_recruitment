@@ -1,6 +1,6 @@
 {
-  "codename": "GOATHEAD2",
-  "icon": "Icons/Razor.png",
+  "codename": "GOATHEAD",
+  "icon": "Icons/Goathead.png",
   "side": {
     "text": "ATTACKER",
     "image": "Images/sideAttacker.png"
