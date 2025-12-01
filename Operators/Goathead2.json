@@ -1,21 +1,21 @@
 {
-  "codename": "GOATHEAD",
-  "icon": "Icons/Goathead.png",
+  "codename": "GOATHEAD2",
+  "icon": "Icons/Razor.png",
   "side": {
     "text": "ATTACKER",
-    "image": "../Images/sideAttacker.png"
+    "image": "Images/sideAttacker.png"
   },
   "squad": {
     "text": "VIPERSTRIKE",
     "image": "Images/viperstrike.png"
   },
   "specialty": "MAP CONTROL, INTEL",
-  "health": "../Images/healthspeedPoints1.png",
+  "health": "Images/healthspeedPoints1.png",
   "speed": "Images/healthspeedPoints3.png",
-  "primaryWeapons": ["../Weapons/F90.png","../Weapons/M870.png"],
-  "secondaryWeapons": ["../Weapons/USP40.png"],
-  "gadgets": ["../Weapons/BREACH CHARGE.png","../Weapons/SMOKE GRENADE.png"],
-  "uniqueAbility": "../UniqueAbilities/BURR TRACKERS.png",
-  "description": "Unique Ability: Burr Trackers x4 ...",
-  "biography": "Tu wpiszesz opis biograficzny"
+  "primaryWeapons": ["Weapons/F90.png","Weapons/M870.png"],
+  "secondaryWeapons": ["Weapons/USP40.png"],
+  "gadgets": ["Weapons/BREACH CHARGE.png","Weapons/SMOKE GRENADE.png"],
+  "uniqueAbility": "UniqueAbilities/BURR TRACKERS.png",
+  "description": "Unique Ability: Burr Trackers x4 ...2",
+  "biography": "Tu wpiszesz opis biograficzny2"
 }
