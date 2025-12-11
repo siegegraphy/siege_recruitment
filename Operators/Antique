@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Operator Antique</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="logo-link">
+    <a id="logo-link" href="../index.html">
+      <img id="titleLogo" src="../Images/RecruitmentLogo.png" alt="Title Logo">
+    </a>   
+  </div>  
+
+  <div class="single-container">
+    <!-- codename -->
+    <div class="iconAndName-container">
+      <img id="operatorIcon" src="../Icons/Antique.png" alt="Icon">
+      <span id="codename" class="static-text">ANTIQUE</span>
+    </div>
+    <!-- side -->
+    <div id="side-container">
+      <span id="side-label-operator">SIDE</span>
+      <img id="side-image" src="../Images/sideAttacker.png" alt="Side icon">
+      <span id="side-text">ATTACKER</span>
+    </div>
+    <!-- squad -->
+    <div id="squad-container">
+      <span id="squad-label-operator">SQUAD</span>
+      <img id="squad-image" src="../Images/redhammer.png" alt="Squad icon">
+      <span id="squad-text">REDHAMMER</span>
+    </div>
+    <!-- specialty -->
+    <div id="specialty-container">
+      <span id="specialty-label-operator">SPECIALTY</span>
+      <div class="specialty-divider"></div>
+      <p id="specialty-output" class="specialty-output">BREACH, MAP CONTROL</p>
+    </div>
+    <!-- health speed -->
+    <div id="health-speed-container">
+      <div class="health-speed-item">
+        <span id="health-label-operator">HEALTH</span>
+        <div class="health-speed-divider"></div>
+        <img id="health-image" src="../Images/healthspeedPoints2.png" alt="Health points">
+      </div>
+      <div class="health-speed-item">
+        <span id="speed-label-operator">SPEED</span>
+        <div class="health-speed-divider"></div>
+        <img id="speed-image" src="../Images/healthspeedPoints2.png" alt="Speed points">
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title-loadout-loadout">LOADOUT</h1>
+  <div class="triple-container">
+    <div class="section-triple">
+      <h2 class="title-loadout-operator primaryWeapon">PRIMARY WEAPON</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator secondaryWeapon">SECONDARY WEAPON</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator gadget">GADGET</h2>
+    </div>
+    <div class="section-triple">
+      <h2 class="title-loadout-operator uniqueAbility">UNIQUE ABILITY</h2>
+    </div>
+  </div>  
+
+  <div class="triple-container">
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/F90.png" alt="M762">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/M870.png" alt="SASG-12">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/USP40.png" alt="USP40">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/USP40.png" alt="LFP586">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/SMOKE GRENADE.png" alt="SMOKE GRENADE">
+      </div>
+      <div class="grid-triple">
+        <img class="loadout" src="../Weapons/BREACH CHARGE.png" alt="STUN GRENADE">
+      </div>
+    </div>
+    <div class="section-triple">
+      <div class="grid-triple">
+        <img class="ability-icon loadout" src="../UniqueAbilities/BURR TRACKERS.png" alt="UniqueAbility">
+      </div>
+    </div>  
+  </div>
+
+  <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
+<textarea id="description" readonly spellcheck="false" style="overflow:hidden;">
+
+</textarea>
+  
+  <h1 class="title-biography">BIOGRAPHY</h1>
+<textarea id="biography" readonly spellcheck="false" style="overflow:hidden;">
+
+</textarea>
+  
+  <script>
+    const textareas = [
+      document.getElementById('description'),
+      document.getElementById('biography')
+    ].filter(Boolean);
+    const fit = (ta) => {
+      ta.style.height = 'auto';
+      ta.style.height = ta.scrollHeight + 'px';
+    };
+    const fitAll = () => textareas.forEach(fit);
+    document.addEventListener('DOMContentLoaded', fitAll);
+    window.addEventListener('load', fitAll);
+    window.addEventListener('resize', fitAll);
+    textareas.forEach(ta => ta.addEventListener('input', () => fit(ta)));
+  </script>
+
+</body>
+</html>
