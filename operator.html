@@ -81,18 +81,13 @@
   <h1 class="title-biography">BIOGRAPHY</h1>
   <textarea id="biography" readonly spellcheck="false"></textarea>
 
-
-  <!-- ======================= -->
-  <!--  JAVASCRIPT ŁADUJĄCY DANE -->
-  <!-- ======================= -->
-
   <script>
     async function loadOperator() {
       const params = new URLSearchParams(window.location.search);
       const op = params.get("op");
 
       if (!op) {
-        alert("Nie podano operatora w URL!");
+        alert("No operator found");
         return;
       }
 
