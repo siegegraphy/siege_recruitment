@@ -62,6 +62,7 @@ const primaryWeapons = {
     " -- CUSTOM WEAPON -- ": [
       { name: 'DRAGUNOV SWD', value: 'Weapons/DRAGUNOV SWD.png' },
       { name: 'FN FAL', value: 'Weapons/FN FAL.png' },
+      { name: 'SL8', value: 'Weapons/SL8.png' },
     ],
   },
   "======== SNIPER RIFLE ========": {
