@@ -96,6 +96,7 @@ const primaryWeapons = {
       { name: 'VECTOR .45 ACP', value: 'Weapons/VECTOR .45 ACP.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
+      { name: 'OTS-14 GROZA', value: 'Weapons/OTS-14 GROZA.png' },
       { name: 'PP-19', value: 'Weapons/PP-19.png' },
       { name: 'THOMPSON MK2', value: 'Weapons/THOMPSON MK2.png' },
       { name: 'TYPE-79 SMG T.K.', value: 'Weapons/TYPE-79 SMG T.K..png' },
@@ -204,6 +205,9 @@ const secondaryWeapons = {
       { name: 'USP40', value: 'Weapons/USP40.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
+      { name: 'APX', value: 'Weapons/APX.png' },
+      { name: 'HS 2000', value: 'Weapons/HS 2000.png' },
+      { name: 'PX-9', value: 'Weapons/PX-9.png' },
     ],
   },
   "======== HAND CANNON ========": {
