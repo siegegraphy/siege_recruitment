@@ -162,13 +162,13 @@ const secondaryWeapons = {
     " -- DEFAULT WEAPON -- ": [
       { name: 'BEARING 9', value: 'Weapons/BEARING 9.png' },
       { name: 'C75 AUTO', value: 'Weapons/C75 AUTO.png' },
-      { name: 'MP-9', value: 'Weapons/MP-9.png' },
       { name: 'REAPER MK2', value: 'Weapons/REAPER MK2.png' },
       { name: 'SMG-11', value: 'Weapons/SMG-11.png' },
       { name: 'SMG-12', value: 'Weapons/SMG-12.png' },
       { name: 'SPSMG9', value: 'Weapons/SPSMG9.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
+      { name: 'MP-9', value: 'Weapons/MP-9.png' },
       { name: 'SCORPION VZ.61', value: 'Weapons/SCORPION VZ.61.png' },
     ],
   },
