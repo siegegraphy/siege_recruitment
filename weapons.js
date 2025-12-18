@@ -98,7 +98,7 @@ const primaryWeapons = {
     " -- CUSTOM WEAPON -- ": [
       { name: 'PP-19', value: 'Weapons/PP-19.png' },
       { name: 'THOMPSON MK2', value: 'Weapons/THOMPSON MK2.png' },
-      { name: 'TYPE-79 T.K.', value: 'Weapons/TYPE-79 T.K..png' },
+      { name: 'TYPE-79 SMG T.K.', value: 'Weapons/TYPE-79 SMG T.K..png' },
     ],
   },
   "======== SLUG SHOTGUN ========": {
