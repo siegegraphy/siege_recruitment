@@ -75,13 +75,22 @@
     </div>
   </div>
 
-  <h1 class="title-ability">UNIQUE ABILITY AND AND PLAYSTYLE</h1>
-  <textarea id="description" readonly spellcheck="false" style="overflow:hidden;"></textarea>
+  <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
+  <textarea id="description" readonly spellcheck="false" style="overflow:hidden"></textarea>
 
   <h1 class="title-biography">BIOGRAPHY</h1>
   <textarea id="biography" readonly spellcheck="false"></textarea>
 
   <script>
+    function fitTextarea(ta) {
+      ta.style.height = "auto";
+      ta.style.height = ta.scrollHeight + "px";
+    }
+  
+    function fitAllTextareas() {
+      document.querySelectorAll("textarea").forEach(fitTextarea);
+    }
+    
     async function loadOperator() {
       const params = new URLSearchParams(window.location.search);
       const op = params.get("op");
@@ -115,15 +124,23 @@
 
       document.getElementById("description").value = data.description;
       document.getElementById("biography").value = data.biography;
+
+      desc.value = data.description;
+      bio.value = data.biography;
+
+      fitAllTextareas();
     }
 
     function insertImages(containerId, images) {
       const container = document.getElementById(containerId);
       images.forEach(src => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "grid-triple";
         const img = document.createElement("img");
         img.className = "loadout";
         img.src = src;
-        container.appendChild(img);
+        wrapper.appendChild(img);
+        container.appendChild(wrapper);
       });
     }
 
