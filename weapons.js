@@ -202,6 +202,7 @@ const secondaryWeapons = {
       { name: 'Q-929', value: 'Weapons/Q-929.png' },
       { name: 'RG15', value: 'Weapons/RG15.png' },
       { name: 'SDP 9MM', value: 'Weapons/SDP 9MM.png' },
+      { name: 'TACIT .45', value: 'Weapons/TACIT .45.png' },
       { name: 'USP40', value: 'Weapons/USP40.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
