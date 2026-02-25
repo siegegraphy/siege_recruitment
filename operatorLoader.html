@@ -1,43 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Operator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="single-container">
+    <div class="iconAndName-container">
+      <img id="operatorIcon" alt="">
+      <span id="codename"></span>
+    </div>
+
+    <div id="side-container">
+      <img id="side-image">
+      <span id="side-text"></span>
+    </div>
+
+    <div id="squad-container">
+      <img id="squad-image">
+      <span id="squad-text"></span>
+    </div>
+
+    <p id="specialty-output"></p>
+
+    <img id="health-image">
+    <img id="speed-image">
+
+    <div id="primary-container"></div>
+    <div id="secondary-container"></div>
+    <div id="gadget-container"></div>
+
+    <img id="unique-ability-image">
+
+    <textarea id="description"></textarea>
+    <textarea id="biography"></textarea>
+  </div>
+
+<script>
 async function loadOperator() {
   const params = new URLSearchParams(window.location.search);
   const op = params.get("op");
 
-  if (!op) {
-    alert("No operator found");
-    return;
-  }
+  if (!op) return;
 
   const script = document.createElement("script");
   script.src = `Operators/${op}.js`;
 
   script.onload = () => {
-    const data = operatorData;
+    const data = window.operatorData;
 
     document.getElementById("operatorIcon").src = data.icon;
     document.getElementById("codename").textContent = data.codename;
-
     document.getElementById("side-image").src = data.side.image;
     document.getElementById("side-text").textContent = data.side.text;
-
     document.getElementById("squad-image").src = data.squad.image;
     document.getElementById("squad-text").textContent = data.squad.text;
-
     document.getElementById("specialty-output").textContent = data.specialty;
-
     document.getElementById("health-image").src = data.health;
     document.getElementById("speed-image").src = data.speed;
-
-    insertImages("primary-container", data.primaryWeapons);
-    insertImages("secondary-container", data.secondaryWeapons);
-    insertImages("gadget-container", data.gadgets);
-
     document.getElementById("unique-ability-image").src = data.uniqueAbility;
-
     document.getElementById("description").value = data.description;
     document.getElementById("biography").value = data.biography;
-
-    fitAllTextareas();
   };
 
   document.body.appendChild(script);
 }
+
+loadOperator();
+</script>
+
+</body>
+</html>
