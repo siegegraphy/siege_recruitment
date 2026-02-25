@@ -244,6 +244,14 @@ select option.option-empty {
   width: 100%;
 }
 
+#realName-container,
+#dateOfBirth-container,
+#placeOfBirth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 #side-label-operator,
 #squad-label-operator,
 #specialty-label-operator,
