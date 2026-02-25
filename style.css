@@ -123,10 +123,14 @@ a#logo-link {
   transform: scale(1.1);
 }
 
-#operatorIcon,
-#operatorFlag{
+#operatorIcon{
   height: 120px;
   width: 120px;
+}
+
+#operatorFlag{
+  height: 120px;
+  width: auto;
 }
 
 .weapon-select {
