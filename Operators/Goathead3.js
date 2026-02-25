@@ -1,4 +1,4 @@
-const operatorData = {
+window.operatorData = {
   codename: "GOATHEAD2",
   icon: "Icons/Goathead2.png",
 
