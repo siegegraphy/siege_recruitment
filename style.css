@@ -204,15 +204,15 @@ select option.option-empty {
 .double-container{
   width: 100%;
   display: flex;
-  gap: 1%;
+  gap: 4%;
   border: 2px solid red;
+  padding: 4%;
 }
 
 .single-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  margin: 20px 4%;
   width: 40%;
   padding: 15px;
   border: 1px solid green;
