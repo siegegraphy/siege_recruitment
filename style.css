@@ -201,7 +201,7 @@ select option.option-empty {
   margin: 0px;
 }
 
-.operator-info{
+.double-container{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -213,7 +213,7 @@ select option.option-empty {
   gap: 15px;
   margin: 20px 10%;
   padding: 15px;
-  border: 0px solid red;
+  border: 1px solid red;
   width: 40%;
 }
 
