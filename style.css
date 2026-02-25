@@ -208,9 +208,10 @@ select option.option-empty {
 .double-container{
   width: auto;
   display: flex;
+  align-items: center;
   gap: auto;
   border: 0px solid red;
-  padding: 2% 5%;
+  padding: 2% 6%;
 }
 
 .single-container {
