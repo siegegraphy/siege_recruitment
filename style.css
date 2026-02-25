@@ -205,6 +205,7 @@ select option.option-empty {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border: 1px solid green;
 }
 
 .single-container {
