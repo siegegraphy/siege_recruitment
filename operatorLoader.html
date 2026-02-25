@@ -51,6 +51,25 @@
     </div>
   </div>
 
+  <div class="flagAndCountry-container">
+      <img id="operatorFlag" alt="Icon">
+      <span id="country" class="static-text"></span>
+  </div>
+  <div>
+    <div id="realName-container">
+      <span id="realName-label-operator">REAL NAME</span>
+      <span id="realName" class="static-text"></span>
+    </div>
+    <div id="dateOfBirth-container">
+      <span id="dateOfBirt-label-operator">DATE OF BIRTH</span>
+      <span id="dateOfBirth" class="static-text"></span>
+    </div>
+    <div id="placeOfBirth-container">
+      <span id="placeOfBirth-label-operator">PLACE OF BIRTH</span>
+      <span id="placeOfBirth" class="static-text"></span>
+    </div>
+  </div>
+
   <h1 class="title-loadout-loadout">LOADOUT</h1>
 
   <div class="triple-container">
@@ -133,6 +152,13 @@ async function loadOperator() {
 
     document.getElementById("health-image").src = data.health;
     document.getElementById("speed-image").src = data.speed;
+
+    document.getElementById("operatorFlag").src = data.icon;
+    document.getElementById("country").textContent = data.codename;
+
+    document.getElementById("realName").textContent = data.codename;
+    document.getElementById("dateOfBirth").textContent = data.codename;
+    document.getElementById("placeOfBirth").textContent = data.codename;
 
     insertImages("primary-container", data.primaryWeapons);
     insertImages("secondary-container", data.secondaryWeapons);
