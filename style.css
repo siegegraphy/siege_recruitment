@@ -209,12 +209,9 @@ select option.option-empty {
 }
 
 .single-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 48%;
   padding: 15px;
-  margin: 20px 4%;
   border: 1px solid green;
-  width: 40%;
 }
 
 #side-container,
