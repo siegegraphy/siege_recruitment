@@ -213,7 +213,7 @@ select option.option-empty {
   gap: 15px;
   margin: 20px 4%;
   padding: 15px;
-  border: 1px solid orange;
+  border: 1px solid green;
   width: 20%;
 }
 
