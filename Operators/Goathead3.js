@@ -17,6 +17,13 @@ window.operatorData = {
   health: "Images/healthspeedPoints1.png",
   speed: "Images/healthspeedPoints3.png",
 
+  flag: "Icons/Goathead2.png",
+  country: "ANDORRA",
+
+  realName: "Santiago Vallboschà",
+  dateOfBirth: "February 10th (Age 31)",
+  placeOfBirth: "Sant Julià de Lòria, Andorra",
+
   primaryWeapons: [
     "Weapons/F90.png",
     "Weapons/M870.png"
