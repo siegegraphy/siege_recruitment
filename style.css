@@ -299,7 +299,7 @@ select option.option-empty {
 .editable-text-codename {
   font-size: 48px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .editable-text-codename:hover {
   cursor: pointer;
