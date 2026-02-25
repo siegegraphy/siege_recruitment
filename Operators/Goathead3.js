@@ -17,7 +17,7 @@ window.operatorData = {
   health: "Images/healthspeedPoints1.png",
   speed: "Images/healthspeedPoints3.png",
 
-  flag: "Icons/Goathead2.png",
+  flag: "Flags/Andorra.png",
   country: "ANDORRA",
 
   realName: "Santiago Vallboschà",
