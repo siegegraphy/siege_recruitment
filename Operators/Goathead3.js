@@ -1,5 +1,5 @@
 window.operatorData = {
-  codename: "GOATHEAD2",
+  codename: "GOATHEAD3",
   icon: "Icons/Goathead2.png",
 
   side: {
