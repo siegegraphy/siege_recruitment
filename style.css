@@ -249,7 +249,7 @@ select option.option-empty {
 #placeOfBirth-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: left;
 }
 
 #side-label-operator,
