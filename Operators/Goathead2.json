@@ -18,8 +18,7 @@
   "gadgets": ["Weapons/BREACH CHARGE.png","Weapons/SMOKE GRENADE.png"],
   "uniqueAbility": "UniqueAbilities/BURR TRACKERS.png",
   
-  "description": "Unique Ability: Burr Trackers x4\n\n Goathead throws 
-  a disc that bounces off walls. Upon landing on a flat surface, it launches small tracking devices in all directions.\n These markers attach to defenders’ clothing within line of sight and range. They ping only while moving.\n\n The tracker remains active until manually removed.\n\n Additional Notes:\n - The disc can be intercepted by Jäger’s ADS and Wamai’s Mag-Net.\n - Destroyed by electrified surfaces.\n - Works inside Mute jammers, but tracking disabled.\n - Frozen by Tubarão.\n - Destroyed by Surya Gate.\n - Cannot attach to Clash if shield blocks sight.\n - Tracks Skopos robots like Jackal.\n - Prisma within range can mark Goathead.",
+  "description": "Unique Ability: Burr Trackers x4\n\n Goathead throws a disc that bounces off walls. Upon landing on a flat surface, it launches small tracking devices in all directions.\n These markers attach to defenders’ clothing within line of sight and range. They ping only while moving.\n\n The tracker remains active until manually removed.\n\n Additional Notes:\n - The disc can be intercepted by Jäger’s ADS and Wamai’s Mag-Net.\n - Destroyed by electrified surfaces.\n - Works inside Mute jammers, but tracking disabled.\n - Frozen by Tubarão.\n - Destroyed by Surya Gate.\n - Cannot attach to Clash if shield blocks sight.\n - Tracks Skopos robots like Jackal.\n - Prisma within range can mark Goathead.",
 
   "biography": ""
 }
