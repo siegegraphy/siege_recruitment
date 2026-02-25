@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid red;
+  outline: 1px solid orange;
 }
 
 body {
@@ -208,8 +208,8 @@ select option.option-empty {
 .double-container{
   width: 100%;
   display: flex;
-  gap: 0;
-  border: 1px solid red;
+  gap: 0px;
+  border: 0px solid red;
   padding: 2% 5%;
 }
 
@@ -218,7 +218,7 @@ select option.option-empty {
   grid-template-columns: 1fr;
   gap: 15px;
   width: 40%;
-  border: 1px solid green;
+  border: 0px solid green;
 }
 
 #side-container,
