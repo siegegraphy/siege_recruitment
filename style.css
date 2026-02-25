@@ -214,8 +214,8 @@ select option.option-empty {
   gap: 15px;
   margin: 20px 10%;
   padding: 15px;
-  border: 1px solid red;
-  width: 40%;
+  border: 1px solid orange;
+  width: 39%;
 }
 
 #side-container,
