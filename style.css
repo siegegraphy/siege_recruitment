@@ -277,6 +277,7 @@ select option.option-empty {
 }
 
 #codename,
+#country,
 #side-text,
 #squad-text,
 #specialty-output{
@@ -298,6 +299,7 @@ select option.option-empty {
 .editable-text-codename {
   font-size: 48px;
   font-weight: bold;
+  margin-left: 10px;
 }
 .editable-text-codename:hover {
   cursor: pointer;
