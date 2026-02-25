@@ -204,7 +204,7 @@ select option.option-empty {
 .operator-info{
   width: 100%;
   display: flex;
-  justify-content: space-beetween;
+  justify-content: space-between;
 }
 
 .single-container {
@@ -248,7 +248,7 @@ select option.option-empty {
 #squad-label,
 #specialty-label,
 #health-label,
-#speed-label,{
+#speed-label{
   color: #ff3d2c;
   font-weight: bold;
   margin: 0;
