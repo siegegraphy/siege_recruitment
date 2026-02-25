@@ -208,7 +208,7 @@ select option.option-empty {
 .double-container{
   width: auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: auto;
   border: 0px solid red;
   padding: 2% 6%;
