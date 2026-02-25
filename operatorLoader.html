@@ -7,38 +7,109 @@
 </head>
 <body>
 
+  <div class="logo-link">
+    <a href="index.html">
+      <img id="titleLogo" src="Images/RecruitmentLogo.png" alt="Title Logo">
+    </a>   
+  </div>  
+
   <div class="single-container">
     <div class="iconAndName-container">
-      <img id="operatorIcon" alt="">
-      <span id="codename"></span>
+      <img id="operatorIcon" alt="Icon">
+      <span id="codename" class="static-text"></span>
     </div>
 
     <div id="side-container">
-      <img id="side-image">
+      <span>SIDE</span>
+      <img id="side-image" alt="">
       <span id="side-text"></span>
     </div>
 
     <div id="squad-container">
-      <img id="squad-image">
+      <span>SQUAD</span>
+      <img id="squad-image" alt="">
       <span id="squad-text"></span>
     </div>
 
-    <p id="specialty-output"></p>
+    <div id="specialty-container">
+      <span>SPECIALTY</span>
+      <div class="specialty-divider"></div>
+      <p id="specialty-output"></p>
+    </div>
 
-    <img id="health-image">
-    <img id="speed-image">
-
-    <div id="primary-container"></div>
-    <div id="secondary-container"></div>
-    <div id="gadget-container"></div>
-
-    <img id="unique-ability-image">
-
-    <textarea id="description"></textarea>
-    <textarea id="biography"></textarea>
+    <div id="health-speed-container">
+      <div class="health-speed-item">
+        <span>HEALTH</span>
+        <div class="health-speed-divider"></div>
+        <img id="health-image" alt="">
+      </div>
+      <div class="health-speed-item">
+        <span>SPEED</span>
+        <div class="health-speed-divider"></div>
+        <img id="speed-image" alt="">
+      </div>
+    </div>
   </div>
 
+  <h1 class="title-loadout-loadout">LOADOUT</h1>
+
+  <div class="triple-container">
+    <div class="section-triple">
+      <h2>PRIMARY WEAPON</h2>
+      <div id="primary-container"></div>
+    </div>
+
+    <div class="section-triple">
+      <h2>SECONDARY WEAPON</h2>
+      <div id="secondary-container"></div>
+    </div>
+
+    <div class="section-triple">
+      <h2>GADGET</h2>
+      <div id="gadget-container"></div>
+    </div>
+
+    <div class="section-triple">
+      <h2>UNIQUE ABILITY</h2>
+      <div>
+        <img id="unique-ability-image" class="ability-icon loadout" alt="">
+      </div>
+    </div>
+  </div>
+
+  <h1>UNIQUE ABILITY AND PLAYSTYLE</h1>
+  <textarea id="description" readonly style="overflow:hidden"></textarea>
+
+  <h1>BIOGRAPHY</h1>
+  <textarea id="biography" readonly style="overflow:hidden"></textarea>
+
 <script>
+function insertImages(containerId, images) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+
+  images.forEach(src => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "grid-triple";
+
+    const img = document.createElement("img");
+    img.className = "loadout";
+    img.src = src;
+
+    wrapper.appendChild(img);
+    container.appendChild(wrapper);
+  });
+}
+
+function fitTextarea(ta) {
+  ta.style.height = "auto";
+  ta.style.height = ta.scrollHeight + "px";
+}
+
+function fitAllTextareas() {
+  document.querySelectorAll("textarea").forEach(fitTextarea);
+}
+
 async function loadOperator() {
   const params = new URLSearchParams(window.location.search);
   const op = params.get("op");
@@ -53,16 +124,28 @@ async function loadOperator() {
 
     document.getElementById("operatorIcon").src = data.icon;
     document.getElementById("codename").textContent = data.codename;
+
     document.getElementById("side-image").src = data.side.image;
     document.getElementById("side-text").textContent = data.side.text;
+
     document.getElementById("squad-image").src = data.squad.image;
     document.getElementById("squad-text").textContent = data.squad.text;
+
     document.getElementById("specialty-output").textContent = data.specialty;
+
     document.getElementById("health-image").src = data.health;
     document.getElementById("speed-image").src = data.speed;
+
+    insertImages("primary-container", data.primaryWeapons);
+    insertImages("secondary-container", data.secondaryWeapons);
+    insertImages("gadget-container", data.gadgets);
+
     document.getElementById("unique-ability-image").src = data.uniqueAbility;
+
     document.getElementById("description").value = data.description;
     document.getElementById("biography").value = data.biography;
+
+    fitAllTextareas();
   };
 
   document.body.appendChild(script);
