@@ -192,7 +192,8 @@ select option.option-empty {
   outline: none;
 }
 
-.iconAndName-container{
+.iconAndName-container,
+.flagAndCountry-container{
   display: flex;
   align-items: center;
   gap: 0px;
@@ -240,7 +241,7 @@ select option.option-empty {
 #squad-label,
 #specialty-label,
 #health-label,
-#speed-label {
+#speed-label,{
   color: #ff3d2c;
   font-weight: bold;
   margin: 0;
@@ -258,7 +259,7 @@ select option.option-empty {
 #codename,
 #side-text,
 #squad-text,
-#specialty-output {
+#specialty-output{
   color: #b0bac6;
 }
 
@@ -310,6 +311,19 @@ select option.option-empty {
 
 .specialty-output {
   margin: 0;
+}
+
+#realName-label-operator,
+#dateOfBirth-label-operator,
+#placeOfBirth-label-operator{
+  font-size: 16px;
+  color: #b0bac6;
+  font-weight: bold;
+}
+
+.operatorInfo-text{
+  font-size: 16px;
+  color: #b0bac6;
 }
 
 h1 {
