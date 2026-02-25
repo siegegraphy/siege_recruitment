@@ -209,9 +209,9 @@ select option.option-empty {
   width: auto;
   display: flex;
   justify-content: center;
-  gap: auto;
+  gap: 10%;
   border: 0px solid red;
-  padding: 2% 6%;
+  padding: 2% 5%;
 }
 
 .single-container {
