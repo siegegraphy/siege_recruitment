@@ -204,7 +204,7 @@ select option.option-empty {
 .double-container{
   width: 100%;
   display: flex;
-  border: 2px solid green;
+  border: 2px solid red;
 }
 
 .single-container {
