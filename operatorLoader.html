@@ -143,6 +143,7 @@ async function loadOperator() {
 
   script.onload = () => {
     const data = window.operatorData;
+    document.title = data.codename;
 
     document.getElementById("operatorIcon").src = data.icon;
     document.getElementById("codename").textContent = data.codename;
