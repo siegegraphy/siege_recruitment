@@ -310,12 +310,14 @@ select option.option-empty {
 }
 
 .static-text, 
-.editable-text-codename {
+.editable-text-codename,
+.editable-text-country {
   font-size: 48px;
   font-weight: bold;
   margin-left: 20px;
 }
-.editable-text-codename:hover {
+.editable-text-codename:hover,
+.editable-text-country:hover{
   cursor: pointer;
   color: #FFB12B;
 }
