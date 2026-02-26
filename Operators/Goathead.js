@@ -17,12 +17,12 @@ window.operatorData = {
   health: "Images/healthspeedPoints1.png",
   speed: "Images/healthspeedPoints3.png",
 
-  flag: "Flags/Kazakhstan.png",
-  country: "KAZAKHSTAN",
+  flag: "Flags/Andorra.png",
+  country: "ANDORRA",
 
-  realName: "[Undefined]",
-  dateOfBirth: "[Undefined]",
-  placeOfBirth: "Kazakhstan",
+  realName: "Santiago Vallboschà",
+  dateOfBirth: "February 10th (Age 31)",
+  placeOfBirth: "Sant Julià de Lòria, Andorra",
 
   primaryWeapons: [
     "Weapons/F90.png",
