@@ -129,7 +129,7 @@ a#logo-link {
 }
 
 #operatorFlag{
-  height: 100px;
+  height: 70px;
   width: auto;
 }
 
@@ -351,13 +351,13 @@ select option.option-empty {
 #realName-label-operator,
 #dateOfBirth-label-operator,
 #placeOfBirth-label-operator{
-  font-size: 26px;
+  font-size: 24px;
   color: #b0bac6;
   font-weight: bold;
 }
 
 .operatorInfo-text{
-  font-size: 26px;
+  font-size: 24px;
   color: #b0bac6;
 }
 
