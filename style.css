@@ -348,13 +348,13 @@ select option.option-empty {
 #realName-label-operator,
 #dateOfBirth-label-operator,
 #placeOfBirth-label-operator{
-  font-size: 30px;
+  font-size: 24px;
   color: #b0bac6;
   font-weight: bold;
 }
 
 .operatorInfo-text{
-  font-size: 30px;
+  font-size: 24px;
   color: #b0bac6;
 }
 
