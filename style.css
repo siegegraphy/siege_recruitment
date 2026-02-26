@@ -232,7 +232,7 @@ select option.option-empty {
 
 .smallGap {
   gap: 0px;
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 #side-container,
