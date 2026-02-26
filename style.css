@@ -255,6 +255,7 @@ select option.option-empty {
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid yellow;
+  margin: none;
 }
 
 #side-label-operator,
