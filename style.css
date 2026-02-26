@@ -221,7 +221,7 @@ select option.option-empty {
 .single-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 1px;
   width: 40%;
   border: 0px solid green;
 }
@@ -348,13 +348,13 @@ select option.option-empty {
 #realName-label-operator,
 #dateOfBirth-label-operator,
 #placeOfBirth-label-operator{
-  font-size: 24px;
+  font-size: 26px;
   color: #b0bac6;
   font-weight: bold;
 }
 
 .operatorInfo-text{
-  font-size: 24px;
+  font-size: 26px;
   color: #b0bac6;
 }
 
