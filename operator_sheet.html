@@ -13,61 +13,85 @@
     </a>   
   </div>  
 
-  <div class="single-container">
-    <!-- codename -->
-    <div class="iconAndName-container">
-      <img id="operatorIcon" class="pointer" src="Icons/defaultIcon.png" alt="Icon">
-      <input type="file" id="fileInput" accept="image/*" style="display: none;">
-      <span id="codename" class="editable-text-codename" tabindex="0">CODENAME</span>
-    </div>
-    <!-- side -->
-    <div id="side-container">
-      <span id="side-label">SIDE</span>
-      <img id="side-image" src="Images/sideAttacker.png" alt="Side icon">
-      <span id="side-text">ATTACKER</span>
-    </div>
-    <!-- squad -->
-    <div id="squad-container">
-      <label id="squad-label">SQUAD</label>
-      <select id="squad-select" style="display:none;">
-        <option value="REDHAMMER" data-img="Images/redhammer.png">REDHAMMER</option>
-        <option value="VIPERSTRIKE" data-img="Images/viperstrike.png">VIPERSTRIKE</option>
-        <option value="GHOSTEYES" data-img="Images/ghosteyes.png">GHOSTEYES</option>
-        <option value="WOLFGUARD" data-img="Images/wolfguard.png">WOLFGUARD</option>
-        <option value="NIGHTHAVEN" data-img="Images/nighthaven.png">NIGHTHAVEN</option>
-        <option value="KERES" data-img="Images/keres.png">KERES</option>
-      </select>
-      <img id="squad-image" src='' alt="Squad icon">
-      <span id="squad-text"></span>
-    </div>
-    <!-- specialty -->
-    <div id="specialty-container">
-      <label id="specialty-label">SPECIALTY</label>
-      <div class="specialty-divider"></div>
-      <div id="specialty-options" style="display:none;">
-        <label> <input type="checkbox" value="FRONT LINE"> FRONT LINE (atk)</label><br>
-        <label> <input type="checkbox" value="BREACH"> BREACH (atk)</label><br>
-        <label> <input type="checkbox" value="MAP CONTROL"> MAP CONTROL (atk)</label><br>
-        <label> <input type="checkbox" value="SUPPORT"> SUPPORT</label><br>
-        <label> <input type="checkbox" value="ANTI-GADGET"> ANTI-GADGET</label><br>
-        <label> <input type="checkbox" value="INTEL"> INTEL</label><br>
-        <label> <input type="checkbox" value="ANTI-ENTRY"> ANTI-ENTRY (def)</label><br>
-        <label> <input type="checkbox" value="TRAPPER"> TRAPPER (def)</label><br>
-        <label> <input type="checkbox" value="CROWD CONTROL"> CROWD CONTROL (def)</label><br>
+  <div class="double-container">
+    <div class="single-container bigGap">
+      <!-- codename -->
+      <div class="iconAndName-container">
+        <img id="operatorIcon" class="pointer" src="Icons/defaultIcon.png" alt="Icon">
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <span id="codename" class="editable-text-codename" contenteditable="true">CODENAME</span>
       </div>
-      <p id="specialty-output" class="specialty-output"></p>
-    </div>
-    <!-- health speed -->
-    <div id="health-speed-container">
-      <div class="health-speed-item">
-        <span id="health-label">HEALTH</span>
-        <div class="health-speed-divider"></div>
-        <img id="health-image" src="Images/healthspeedPoints2.png" alt="Health points">
+      <!-- side -->
+      <div id="side-container">
+        <span id="side-label">SIDE</span>
+        <img id="side-image" src="Images/sideAttacker.png" alt="Side icon">
+        <span id="side-text">ATTACKER</span>
       </div>
-      <div class="health-speed-item">
-        <span id="speed-label">SPEED</span>
-        <div class="health-speed-divider"></div>
-        <img id="speed-image" src="Images/healthspeedPoints2.png" alt="Speed points">
+      <!-- squad -->
+      <div id="squad-container">
+        <label id="squad-label">SQUAD</label>
+        <select id="squad-select" style="display:none;">
+          <option value="REDHAMMER" data-img="Images/redhammer.png">REDHAMMER</option>
+          <option value="VIPERSTRIKE" data-img="Images/viperstrike.png">VIPERSTRIKE</option>
+          <option value="GHOSTEYES" data-img="Images/ghosteyes.png">GHOSTEYES</option>
+          <option value="WOLFGUARD" data-img="Images/wolfguard.png">WOLFGUARD</option>
+          <option value="NIGHTHAVEN" data-img="Images/nighthaven.png">NIGHTHAVEN</option>
+          <option value="KERES" data-img="Images/keres.png">KERES</option>
+        </select>
+        <img id="squad-image" src='' alt="Squad icon">
+        <span id="squad-text"></span>
+      </div>
+      <!-- specialty -->
+      <div id="specialty-container">
+        <label id="specialty-label">SPECIALTY</label>
+        <div class="specialty-divider"></div>
+        <div id="specialty-options" style="display:none;">
+          <label> <input type="checkbox" value="FRONT LINE"> FRONT LINE (atk)</label><br>
+          <label> <input type="checkbox" value="BREACH"> BREACH (atk)</label><br>
+          <label> <input type="checkbox" value="MAP CONTROL"> MAP CONTROL (atk)</label><br>
+          <label> <input type="checkbox" value="SUPPORT"> SUPPORT</label><br>
+          <label> <input type="checkbox" value="ANTI-GADGET"> ANTI-GADGET</label><br>
+          <label> <input type="checkbox" value="INTEL"> INTEL</label><br>
+          <label> <input type="checkbox" value="ANTI-ENTRY"> ANTI-ENTRY (def)</label><br>
+          <label> <input type="checkbox" value="TRAPPER"> TRAPPER (def)</label><br>
+          <label> <input type="checkbox" value="CROWD CONTROL"> CROWD CONTROL (def)</label><br>
+        </div>
+        <p id="specialty-output" class="specialty-output"></p>
+      </div>
+      <!-- health speed -->
+      <div id="health-speed-container">
+        <div class="health-speed-item">
+          <span id="health-label">HEALTH</span>
+          <div class="health-speed-divider"></div>
+          <img id="health-image" src="Images/healthspeedPoints2.png" alt="Health points">
+        </div>
+        <div class="health-speed-item">
+          <span id="speed-label">SPEED</span>
+          <div class="health-speed-divider"></div>
+          <img id="speed-image" src="Images/healthspeedPoints2.png" alt="Speed points">
+        </div>
+      </div>
+    </div>
+    <div class="single-container smallGap">
+      <!-- country -->
+      <div class="flagAndCountry-container">
+        <img id="operatorFlag" class="pointer" src="Images/defaultFlag.png" alt="Flag">
+        <input type="file" id="flagInput" accept="image/*" style="display:none;">
+        <span id="country" class="editable-text-codename" contenteditable="true">COUNTRY</span>
+      </div>
+      <div id="realName-container">
+        <span>REAL NAME</span>
+        <input type="text" id="realName" class="operatorInfo-text">
+      </div>
+      <div class="info-divider"></div>
+      <div id="dateOfBirth-container">
+        <span>DATE OF BIRTH</span>
+        <input type="text" id="dateOfBirth" class="operatorInfo-text">
+      </div>
+      <div class="info-divider"></div>
+      <div id="placeOfBirth-container">
+        <span>PLACE OF BIRTH</span>
+        <input type="text" id="placeOfBirth" class="operatorInfo-text">
       </div>
     </div>
   </div>
@@ -164,28 +188,72 @@
   <h1 class="title-biography">BIOGRAPHY</h1>
   <textarea id="biography_area" spellcheck="false" placeholder="Biography"></textarea>
 
+  
   <script>
-    document.querySelectorAll(".ability-icon").forEach((img, index) => {
-      const input = document.querySelectorAll(".ability-input")[index];
-      img.addEventListener("click", () => input.click());
-      input.addEventListener("change", event => {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = e => img.src = e.target.result;
-          reader.readAsDataURL(file);
-        }
-      });
-    });
 
-    document.querySelectorAll("#description_area, #biography_area").forEach(textarea => {
+    // ===== AUTO RESIZE TEXTAREA =====
+    document.querySelectorAll("textarea").forEach(textarea => {
       textarea.addEventListener("input", () => {
         textarea.style.height = "auto";
         textarea.style.height = textarea.scrollHeight + "px";
       });
-      // ustaw początkową wysokość na podstawie zawartości
       textarea.style.height = textarea.scrollHeight + "px";
     });
+
+
+    // ===== ICON UPLOAD =====
+    document.getElementById("operatorIcon").addEventListener("click", () => {
+      document.getElementById("iconInput").click();
+    });
+
+    document.getElementById("iconInput").addEventListener("change", e => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = ev => {
+        document.getElementById("operatorIcon").src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+
+    // ===== FLAG UPLOAD =====
+    document.getElementById("operatorFlag").addEventListener("click", () => {
+      document.getElementById("flagInput").click();
+    });
+
+    document.getElementById("flagInput").addEventListener("change", e => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = ev => {
+        document.getElementById("operatorFlag").src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+
+    // ===== SQUAD SELECT IMAGE UPDATE =====
+    document.getElementById("squad-select").addEventListener("change", function() {
+      const selected = this.options[this.selectedIndex];
+      const img = selected.getAttribute("data-img");
+
+      document.getElementById("squad-text").textContent = selected.value;
+      document.getElementById("squad-image").src = img || "";
+    });
+
+
+    // ===== SPECIALTY OUTPUT =====
+    document.querySelectorAll("#specialty-options input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        const checked = [...document.querySelectorAll("#specialty-options input:checked")]
+          .map(el => el.value);
+        document.getElementById("specialty-output").textContent = checked.join(", ");
+      });
+    });
+
   </script>
 
 </body>
