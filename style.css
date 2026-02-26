@@ -254,6 +254,7 @@ select option.option-empty {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  border: 1px solid yellow;
 }
 
 #side-label-operator,
@@ -315,6 +316,7 @@ select option.option-empty {
   height: 1px;
   background-color: #b0bac6;
   margin: 1px 0px 3px 0px;
+  border: 1px solid red;
 }
 
 .health-speed-divider {
@@ -342,13 +344,13 @@ select option.option-empty {
 #realName-label-operator,
 #dateOfBirth-label-operator,
 #placeOfBirth-label-operator{
-  font-size: 16px;
+  font-size: 30px;
   color: #b0bac6;
   font-weight: bold;
 }
 
 .operatorInfo-text{
-  font-size: 16px;
+  font-size: 30px;
   color: #b0bac6;
 }
 
