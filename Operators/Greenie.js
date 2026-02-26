@@ -1,6 +1,6 @@
 window.operatorData = {
-  codename: "YAKOR",
-  icon: "Icons/Yakor.png",
+  codename: "GREENIE",
+  icon: "Icons/Greenie.png",
 
   side: {
     text: "ATTACKER",
@@ -8,11 +8,11 @@ window.operatorData = {
   },
 
   squad: {
-    text: "WOLFGUARD",
-    image: "Images/wolfguard.png"
+    text: "[UNKNOWN]",
+    image: "Images/favicon.png"
   },
 
-  specialty: "SUPPORT, ANTI-GADGET",
+  specialty: "[UNKNOWN]",
 
   health: "Images/healthspeedPoints2.png",
   speed: "Images/healthspeedPoints2.png",
@@ -25,20 +25,19 @@ window.operatorData = {
   placeOfBirth: "Kazakhstan",
 
   primaryWeapons: [
-    "Weapons/ARX200.png",
-    "Weapons/6P41.png"
+    "Weapons/LVOA.png",
+    "Weapons/9X19VSN.png"
   ],
 
   secondaryWeapons: [
-    "Weapons/SCORPION VZ.61.png",
-    "Weapons/GONNE-6.png",
-    "Weapons/GLAIVE-12.png"
+    "Weapons/ITA12S.png",
+    "Weapons/HS 2000.png"
   ],
 
   gadgets: [
     "Weapons/FRAG GRENADE.png",
-    "Weapons/SMOKE GRENADE.png",
-    "Weapons/STUN GRENADE.png"
+    "Weapons/FRAG GRENADE.png",
+    "Weapons/FRAG GRENADE.png"
   ],
 
   uniqueAbility: "UniqueAbilities/UniqueAbility.png",
