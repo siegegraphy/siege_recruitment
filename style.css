@@ -221,13 +221,16 @@ select option.option-empty {
 .single-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1px;
   width: 40%;
   border: 0px solid green;
 }
 
+.bigGap {
+  gap: 15px;
+}
+
 .smallGap {
-  gap: 5px;
+  gap: 4px;
 }
 
 #side-container,
