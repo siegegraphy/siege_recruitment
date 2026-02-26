@@ -230,7 +230,8 @@ select option.option-empty {
 }
 
 .smallGap {
-  gap: 2px;
+  gap: 0px;
+  margin-top: 6px;
 }
 
 #side-container,
