@@ -207,6 +207,7 @@ select option.option-empty {
   align-items: center;
   gap: 0px;
   margin: 0px;
+  height: 120px;
 }
 
 .double-container{
