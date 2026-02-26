@@ -1,21 +1,21 @@
 window.operatorData = {
-  codename: "HORUS",
-  icon: "Icons/Horus.png",
+  codename: "BROWNIE",
+  icon: "Icons/Brownie.png",
 
   side: {
-    text: "DEFENDER",
+    text: "[UNKNOWN]",
     image: "Images/sideDefender.png"
   },
 
   squad: {
-    text: "KERES",
-    image: "Images/keres.png"
+    text: "[UNKNOWN]",
+    image: "Images/favicon.png"
   },
 
-  specialty: "ANTI-ENTRY, CROWD CONTROL",
+  specialty: "[UNKNOWN]",
 
-  health: "Images/healthspeedPoints1.png",
-  speed: "Images/healthspeedPoints3.png",
+  health: "Images/healthspeedPoints2.png",
+  speed: "Images/healthspeedPoints2.png",
 
   flag: "Flags/Egypt.png",
   country: "EGYPT",
@@ -25,19 +25,18 @@ window.operatorData = {
   placeOfBirth: "Cairo, Egypt",
 
   primaryWeapons: [
-    "Weapons/F2.png",
-    "Weapons/BTS12.png",
-    "Weapons/MP5K.png"
+    "Weapons/AUG A3.png",
+    "Weapons/SPAS-12.png"
   ],
 
   secondaryWeapons: [
-    "Weapons/SMG-12.png",
-    "Weapons/44 MAG SEMI-AUTO.png",
-    "Weapons/C75 AUTO.png"
+    "Weapons/KERATOS .357.png",
+    "Weapons/MP-9.png"
   ],
 
   gadgets: [
-    "Weapons/OBSERVATION BLOCKER.png",
+    "Weapons/IMPACT GRENADE.png",
+    "Weapons/IMPACT GRENADE.png",
     "Weapons/IMPACT GRENADE.png"
   ],
 
