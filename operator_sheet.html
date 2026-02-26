@@ -19,8 +19,8 @@
       <!-- codename -->
       <div class="iconAndName-container">
         <img id="operatorIcon" class="pointer" src="Icons/defaultIcon.png" alt="Icon">
-        <input type="file" id="fileInput" accept="image/*" style="display: none;">
-        <span id="codename" class="editable-text-codename" contenteditable="true">CODENAME</span>
+        <input type="file" id="iconInput" accept="image/*" style="display: none;">
+        <span id="codename" class="editable-text-codename" contenteditable="true" spellcheck="false">CODENAME</span>
       </div>
       <!-- side -->
       <div id="side-container">
@@ -78,21 +78,21 @@
       <div class="flagAndCountry-container">
         <img id="operatorFlag" class="pointer" src="Images/Earth.png" alt="Flag">
         <input type="file" id="flagInput" accept="image/*" style="display:none;">
-        <span id="country" class="editable-text-country" contenteditable="true">COUNTRY</span>
+        <span id="country" class="editable-text-country" contenteditable="true" spellcheck="false">COUNTRY</span>
       </div>
       <div id="realName-container">
         <span id="realName-label-operator">REAL NAME</span>
-        <input type="text" id="realName" class="operatorInfo-text">
+        <span id="realName" class="operatorInfo-text" contenteditable="true" spellcheck="false"></span>
       </div>
       <div class="info-divider"></div>
       <div id="dateOfBirth-container">
         <span id="dateOfBirth-label-operator">DATE OF BIRTH</span>
-        <input type="text" id="dateOfBirth" class="operatorInfo-text">
+        <span id="dateOfBirth" class="operatorInfo-text" contenteditable="true" spellcheck="false"></span>
       </div>
       <div class="info-divider"></div>
       <div id="placeOfBirth-container">
         <span id="placeOfBirth-label-operator">PLACE OF BIRTH</span>
-        <input type="text" id="placeOfBirth" class="operatorInfo-text">
+        <span id="placeOfBirth" class="operatorInfo-text" contenteditable="true" spellcheck="false"></span>
       </div>
     </div>
   </div>
@@ -233,6 +233,24 @@
         document.getElementById("operatorFlag").src = ev.target.result;
       };
       reader.readAsDataURL(file);
+    });
+
+    // ===== UNIQUE ABILITY UPLOAD =====
+    document.querySelectorAll(".ability-icon").forEach((img, index) => {
+      const input = document.querySelectorAll(".ability-input")[index];
+    
+      img.addEventListener("click", () => input.click());
+    
+      input.addEventListener("change", e => {
+        const file = e.target.files[0];
+        if (!file) return;
+    
+        const reader = new FileReader();
+        reader.onload = ev => {
+          img.src = ev.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
     });
 
 
