@@ -180,8 +180,6 @@
   </div>
 
   <script src="weapons.js"></script>
-  <script src="operatorLoadout.js"></script>
-  <script src="operatorInfo.js"></script>
 
   <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
   <textarea id="description_area" spellcheck="false" placeholder="Description"></textarea>
@@ -200,79 +198,180 @@
       });
       textarea.style.height = textarea.scrollHeight + "px";
     });
-
-
-    // ===== ICON UPLOAD =====
-    document.getElementById("operatorIcon").addEventListener("click", () => {
-      document.getElementById("iconInput").click();
-    });
-
-    document.getElementById("iconInput").addEventListener("change", e => {
-      const file = e.target.files[0];
+    
+    // ================= ICON UPLOAD =================
+    const operatorIcon = document.getElementById('operatorIcon');
+    const iconInput = document.getElementById('iconInput');
+    
+    operatorIcon.addEventListener('click', () => iconInput.click());
+    
+    iconInput.addEventListener('change', () => {
+      const file = iconInput.files[0];
       if (!file) return;
-
       const reader = new FileReader();
-      reader.onload = ev => {
-        document.getElementById("operatorIcon").src = ev.target.result;
-      };
+      reader.onload = e => operatorIcon.src = e.target.result;
       reader.readAsDataURL(file);
     });
-
-
-    // ===== FLAG UPLOAD =====
-    document.getElementById("operatorFlag").addEventListener("click", () => {
-      document.getElementById("flagInput").click();
-    });
-
-    document.getElementById("flagInput").addEventListener("change", e => {
+    
+    // ================= FLAG UPLOAD =================
+    const operatorFlag = document.getElementById("operatorFlag");
+    const flagInput = document.getElementById("flagInput");
+    
+    operatorFlag.addEventListener("click", () => flagInput.click());
+    
+    flagInput.addEventListener("change", e => {
       const file = e.target.files[0];
       if (!file) return;
-
       const reader = new FileReader();
-      reader.onload = ev => {
-        document.getElementById("operatorFlag").src = ev.target.result;
-      };
+      reader.onload = ev => operatorFlag.src = ev.target.result;
       reader.readAsDataURL(file);
     });
-
-    // ===== UNIQUE ABILITY UPLOAD =====
+    
+    // ================= SIDE =================
+    const sideLabel = document.getElementById('side-label');
+    const sideImage = document.getElementById('side-image');
+    const sideText = document.getElementById('side-text');
+    
+    let currentSide = 'ATTACKER';
+    
+    sideLabel.addEventListener('click', () => {
+      if (currentSide === 'ATTACKER') {
+        currentSide = 'DEFENDER';
+        sideImage.src = 'Images/sideDefender.png';
+        sideText.textContent = 'DEFENDER';
+      } else {
+        currentSide = 'ATTACKER';
+        sideImage.src = 'Images/sideAttacker.png';
+        sideText.textContent = 'ATTACKER';
+      }
+    });
+    
+    // ================= SQUAD =================
+    const squadLabel = document.getElementById('squad-label');
+    const squadSelect = document.getElementById('squad-select');
+    const squadImage = document.getElementById('squad-image');
+    const squadText = document.getElementById('squad-text');
+    
+    function setSquad(option) {
+      const imgPath = option.getAttribute('data-img');
+      squadImage.src = imgPath || "";
+      squadText.textContent = option.value;
+    }
+    
+    squadLabel.addEventListener('click', () => {
+      squadSelect.style.display =
+        squadSelect.style.display === 'none' ? 'inline' : 'none';
+    });
+    
+    squadSelect.addEventListener('change', () => {
+      setSquad(squadSelect.options[squadSelect.selectedIndex]);
+      squadSelect.style.display = 'none';
+    });
+    
+    // ================= SPECIALTY =================
+    const specialtyLabel = document.getElementById('specialty-label');
+    const specialtyOptions = document.getElementById('specialty-options');
+    const specialtyOutput = document.getElementById('specialty-output');
+    
+    specialtyLabel.addEventListener('click', () => {
+      specialtyOptions.style.display =
+        specialtyOptions.style.display === 'none' ? 'block' : 'none';
+    });
+    
+    specialtyOptions.addEventListener('change', () => {
+      const checked = [...specialtyOptions.querySelectorAll("input:checked")]
+        .map(cb => cb.value);
+      specialtyOutput.textContent = checked.join(", ");
+    });
+    
+    // ================= HEALTH / SPEED =================
+    const healthLabel = document.getElementById('health-label');
+    const speedLabel = document.getElementById('speed-label');
+    const healthImage = document.getElementById('health-image');
+    const speedImage = document.getElementById('speed-image');
+    
+    const states = [
+      ['healthspeedPoints3.png', 'healthspeedPoints1.png'],
+      ['healthspeedPoints2.png', 'healthspeedPoints2.png'],
+      ['healthspeedPoints1.png', 'healthspeedPoints3.png']
+    ];
+    
+    let stateIndex = 1;
+    
+    function updateStats() {
+      healthImage.src = 'Images/' + states[stateIndex][0];
+      speedImage.src = 'Images/' + states[stateIndex][1];
+    }
+    
+    healthLabel.addEventListener('click', () => {
+      stateIndex = (stateIndex - 1 + states.length) % states.length;
+      updateStats();
+    });
+    
+    speedLabel.addEventListener('click', () => {
+      stateIndex = (stateIndex + 1) % states.length;
+      updateStats();
+    });
+    
+    updateStats();
+    
+    // ================= UNIQUE ABILITY UPLOAD =================
     document.querySelectorAll(".ability-icon").forEach((img, index) => {
       const input = document.querySelectorAll(".ability-input")[index];
-    
       img.addEventListener("click", () => input.click());
-    
       input.addEventListener("change", e => {
         const file = e.target.files[0];
         if (!file) return;
-    
         const reader = new FileReader();
-        reader.onload = ev => {
-          img.src = ev.target.result;
-        };
+        reader.onload = ev => img.src = ev.target.result;
         reader.readAsDataURL(file);
       });
     });
-
-
-    // ===== SQUAD SELECT IMAGE UPDATE =====
-    document.getElementById("squad-select").addEventListener("change", function() {
-      const selected = this.options[this.selectedIndex];
-      const img = selected.getAttribute("data-img");
-
-      document.getElementById("squad-text").textContent = selected.value;
-      document.getElementById("squad-image").src = img || "";
-    });
-
-
-    // ===== SPECIALTY OUTPUT =====
-    document.querySelectorAll("#specialty-options input").forEach(cb => {
-      cb.addEventListener("change", () => {
-        const checked = [...document.querySelectorAll("#specialty-options input:checked")]
-          .map(el => el.value);
-        document.getElementById("specialty-output").textContent = checked.join(", ");
+    
+    // ================= LOADOUT (przeniesione z operatorLoadout.js) =================
+    
+    const loadoutData = {
+      primaryWeapon: primaryWeapons,
+      secondaryWeapon: secondaryWeapons,
+      gadget: gadgets
+    };
+    
+    const defaultImage = 'Empty.png';
+    
+    function fillSelects(selector) {
+      document.querySelectorAll(selector).forEach(select => {
+        const type = select.dataset.type;
+        const data = loadoutData[type];
+        if (!data) return;
+    
+        select.innerHTML = '';
+        select.appendChild(new Option('------', ''));
+    
+        Object.entries(data).forEach(([main, subGroups]) => {
+          const mainOpt = new Option(main, '');
+          mainOpt.disabled = true;
+          select.appendChild(mainOpt);
+    
+          Object.entries(subGroups).forEach(([sub, weapons]) => {
+            const subOpt = new Option(sub, '');
+            subOpt.disabled = true;
+            select.appendChild(subOpt);
+    
+            weapons.forEach(weapon => {
+              select.appendChild(new Option(weapon.name, weapon.value));
+            });
+          });
+        });
+    
+        select.addEventListener('change', () => {
+          const img = select.nextElementSibling;
+          if (img) img.src = select.value || defaultImage;
+        });
       });
-    });
-
+    }
+    
+    fillSelects("select.weapon-select");
+  
   </script>
 
 </body>
