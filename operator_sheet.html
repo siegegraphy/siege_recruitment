@@ -322,6 +322,27 @@
     });
     
     updateStats();
+
+    // ================= REAL NAME / DATE OF BIRTH / PALCE OF BIRTH =================
+    function setupEditableField(id){
+        const el = document.getElementById(id);
+
+        el.addEventListener("blur", () => {
+            if(el.textContent.trim() === ""){
+                el.textContent = "[UNDEFINED]";
+            }
+        });
+
+        el.addEventListener("focus", () => {
+            if(el.textContent === "[UNDEFINED]"){
+                el.textContent = "";
+            }
+        });
+    }
+
+    setupEditableField("realName");
+    setupEditableField("dateOfBirth");
+    setupEditableField("placeOfBirth");
     
     // ================= UNIQUE ABILITY UPLOAD =================
     document.querySelectorAll(".ability-icon").forEach((img, index) => {
