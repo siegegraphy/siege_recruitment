@@ -228,6 +228,29 @@
       reader.onload = ev => operatorFlag.src = ev.target.result;
       reader.readAsDataURL(file);
     });
+
+    // ================= CODENAME / COUNTRY / REAL NAME / DATE OF BIRTH / PALCE OF BIRTH =================
+    function setupEditableField(id, keyword){
+        const el = document.getElementById(id);
+
+        el.addEventListener("blur", () => {
+            if(el.textContent.trim() === ""){
+                el.textContent = keyword;
+            }
+        });
+
+        el.addEventListener("focus", () => {
+            if(el.textContent === keyword){
+                el.textContent = "";
+            }
+        });
+    }
+
+    setupEditableField("codename", "CODENAME");
+    setupEditableField("country", "COUNTRY");
+    setupEditableField("realName", "[UNDEFINED]");
+    setupEditableField("dateOfBirth", "[UNDEFINED]");
+    setupEditableField("placeOfBirth", "[UNDEFINED]");
     
     // ================= SIDE =================
     const sideLabel = document.getElementById('side-label');
@@ -323,27 +346,6 @@
     
     updateStats();
 
-    // ================= REAL NAME / DATE OF BIRTH / PALCE OF BIRTH =================
-    function setupEditableField(id){
-        const el = document.getElementById(id);
-
-        el.addEventListener("blur", () => {
-            if(el.textContent.trim() === ""){
-                el.textContent = "[UNDEFINED]";
-            }
-        });
-
-        el.addEventListener("focus", () => {
-            if(el.textContent === "[UNDEFINED]"){
-                el.textContent = "";
-            }
-        });
-    }
-
-    setupEditableField("realName");
-    setupEditableField("dateOfBirth");
-    setupEditableField("placeOfBirth");
-    
     // ================= UNIQUE ABILITY UPLOAD =================
     document.querySelectorAll(".ability-icon").forEach((img, index) => {
       const input = document.querySelectorAll(".ability-input")[index];
