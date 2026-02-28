@@ -32,6 +32,7 @@
       <div id="squad-container">
         <label id="squad-label">SQUAD</label>
         <select id="squad-select" style="display:none;">
+          <option value="RAINBOW" data-img="Images/TeamRainbow.png">RAINBOW</option>
           <option value="REDHAMMER" data-img="Images/redhammer.png">REDHAMMER</option>
           <option value="VIPERSTRIKE" data-img="Images/viperstrike.png">VIPERSTRIKE</option>
           <option value="GHOSTEYES" data-img="Images/ghosteyes.png">GHOSTEYES</option>
@@ -76,7 +77,7 @@
     <div class="single-container smallGap">
       <!-- country -->
       <div class="flagAndCountry-container">
-        <img id="operatorFlag" class="pointer" src="Images/Earth.png" alt="Flag">
+        <img id="operatorFlag" class="pointer" src="Flags/Earth.png" alt="Flag">
         <input type="file" id="flagInput" accept="image/*" style="display:none;">
         <span id="country" class="editable-text-country" contenteditable="true" spellcheck="false">COUNTRY</span>
       </div>
@@ -180,6 +181,7 @@
   </div>
 
   <script src="weapons.js"></script>
+  <script src="operatorLoadoutCreator.js"></script>
 
   <h1 class="title-ability">UNIQUE ABILITY AND PLAYSTYLE</h1>
   <textarea id="description_area" spellcheck="false" placeholder="Description"></textarea>
@@ -327,50 +329,6 @@
         reader.readAsDataURL(file);
       });
     });
-    
-    // ================= LOADOUT (przeniesione z operatorLoadout.js) =================
-    
-    const loadoutData = {
-      primaryWeapon: primaryWeapons,
-      secondaryWeapon: secondaryWeapons,
-      gadget: gadgets
-    };
-    
-    const defaultImage = 'Empty.png';
-    
-    function fillSelects(selector) {
-      document.querySelectorAll(selector).forEach(select => {
-        const type = select.dataset.type;
-        const data = loadoutData[type];
-        if (!data) return;
-    
-        select.innerHTML = '';
-        select.appendChild(new Option('------', ''));
-    
-        Object.entries(data).forEach(([main, subGroups]) => {
-          const mainOpt = new Option(main, '');
-          mainOpt.disabled = true;
-          select.appendChild(mainOpt);
-    
-          Object.entries(subGroups).forEach(([sub, weapons]) => {
-            const subOpt = new Option(sub, '');
-            subOpt.disabled = true;
-            select.appendChild(subOpt);
-    
-            weapons.forEach(weapon => {
-              select.appendChild(new Option(weapon.name, weapon.value));
-            });
-          });
-        });
-    
-        select.addEventListener('change', () => {
-          const img = select.nextElementSibling;
-          if (img) img.src = select.value || defaultImage;
-        });
-      });
-    }
-    
-    fillSelects("select.weapon-select");
   
   </script>
 
