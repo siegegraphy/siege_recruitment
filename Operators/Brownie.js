@@ -9,7 +9,7 @@ window.operatorData = {
 
   squad: {
     text: "[UNKNOWN]",
-    image: "Images/favicon.png"
+    image: "Images/TeamRainbow.png"
   },
 
   specialty: "[UNKNOWN]",
