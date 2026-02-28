@@ -269,6 +269,12 @@
       setSquad(squadSelect.options[squadSelect.selectedIndex]);
       squadSelect.style.display = 'none';
     });
+
+    const defaultOption = squadSelect.querySelector('option[value="RAINBOW"]');
+    if (defaultOption) {
+      squadSelect.value = "RAINBOW";
+      setSquad(defaultOption);
+    }
     
     // ================= SPECIALTY =================
     const specialtyLabel = document.getElementById('specialty-label');
