@@ -1,0 +1,49 @@
+window.operatorData = {
+  codename: "YELLOW",
+  icon: "Icons/Brownie.png",
+
+  side: {
+    text: "ATTACKER",
+    image: "Images/sideAttacker.png"
+  },
+
+  squad: {
+    text: "RAINBOW",
+    image: "Images/teamRainbow.png"
+  },
+
+  specialty: "MAP CONTROL, SUPPORT",
+
+  health: "Images/healthspeedPoints2.png",
+  speed: "Images/healthspeedPoints2.png",
+
+  flag: "Flags/Earth.png",
+  country: "[UNDEFINED]",
+
+  realName: "[Undefined]",
+  dateOfBirth: "[Undefined]",
+  placeOfBirth: "[Undefined]",
+
+  primaryWeapons: [
+    "Weapons/V308.png",
+    "Weapons/SASG-12.png"
+  ],
+
+  secondaryWeapons: [
+    "Weapons/USP40.png",
+    "Weapons/LFP586.png"
+  ],
+
+  gadgets: [
+    "Weapons/HE GRENADE.png",
+    "Weapons/EMP GRENADE.png",
+    "Weapons/Soft GRENADE.png",
+    "Weapons/Hard GRENADE.png"
+  ],
+
+  uniqueAbility: "UniqueAbilities/UniqueAbility.png",
+
+  description: ``,
+
+  biography: ``
+};
