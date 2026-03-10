@@ -30,6 +30,7 @@ window.operatorData = {
   ],
 
   secondaryWeapons: [
+    "Weapons/5.7 USG.png"
   ],
 
   gadgets: [
