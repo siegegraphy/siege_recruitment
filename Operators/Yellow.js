@@ -1,6 +1,6 @@
 window.operatorData = {
   codename: "YELLOW",
-  icon: "Icons/Brownie.png",
+  icon: "Icons/Yellow.png",
 
   side: {
     text: "ATTACKER",
@@ -9,7 +9,7 @@ window.operatorData = {
 
   squad: {
     text: "RAINBOW",
-    image: "Images/teamRainbow.png"
+    image: "Images/TeamRainbow.png"
   },
 
   specialty: "MAP CONTROL, SUPPORT",
@@ -30,15 +30,9 @@ window.operatorData = {
   ],
 
   secondaryWeapons: [
-    "Weapons/USP40.png",
-    "Weapons/LFP586.png"
   ],
 
   gadgets: [
-    "Weapons/HE GRENADE.png",
-    "Weapons/EMP GRENADE.png",
-    "Weapons/Soft GRENADE.png",
-    "Weapons/Hard GRENADE.png"
   ],
 
   uniqueAbility: "UniqueAbilities/UniqueAbility.png",
