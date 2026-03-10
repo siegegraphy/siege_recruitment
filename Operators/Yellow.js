@@ -31,7 +31,7 @@ window.operatorData = {
 
   secondaryWeapons: [
     "Weapons/BAILIFF 410.png",
-    "WeaponsM45 MEUSOC.png",
+    "Weapons/M45 MEUSOC.png",
     "Weapons/PRB92.png"
   ],
 
