@@ -30,9 +30,15 @@ window.operatorData = {
   ],
 
   secondaryWeapons: [
+    "Weapons/BAILIFF 410.png",
+    "WeaponsM45 MEUSOC.png",
+    "Weapons/PRB92.png"
   ],
 
   gadgets: [
+    "Weapons/BREACH CHARGE.png",
+    "Weapons/FRAG GRENADE.png",
+    "Weapons/HARD BREACH CHARGE.png"
   ],
 
   uniqueAbility: "UniqueAbilities/UniqueAbility.png",
