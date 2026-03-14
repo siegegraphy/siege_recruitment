@@ -43,7 +43,15 @@ window.operatorData = {
 
   uniqueAbility: "UniqueAbilities/UniqueAbility.png",
 
-  description: ``,
+  description: `
+X launches a projectile that, upon impact, deploys a rapidly hardening substance. The substance spreads within a 2-meter radius, forming a spherical foam structure. Once hardened, it creates a solid, impenetrable obstacle that blocks bullets and projectiles and prevents passage. The barrier has its own durability and will break after sustaining multiple shots or melee hits in a short period of time, eventually collapsing completely. If left undamaged, it will gradually regenerate its durability. Explosions destroy it instantly.
+
+The expanding foam destroys any gadgets in its path.
+
+The projectile can be intercepted by ADS or MAG-NET devices. It is destroyed by electricity and will not activate if it lands within the range of a Zoto Canister.
+
+The deployed foam is immune to electricity, grappling devices, and scans.
+`,
 
   biography: ``
 };
