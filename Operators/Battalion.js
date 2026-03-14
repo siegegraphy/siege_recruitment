@@ -22,7 +22,7 @@ window.operatorData = {
 
   realName: "[Undefined]",
   dateOfBirth: "[Undefined]",
-  placeOfBirth: "Santo Domingo, DOMINICAN REPUBLIC",
+  placeOfBirth: "Santo Domingo, Dominican Republic",
 
   primaryWeapons: [
     "Weapons/MK17 CQB.png",
