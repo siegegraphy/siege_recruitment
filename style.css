@@ -19,6 +19,10 @@ body {
   width: 100%;
 }
 
+.main-logo {
+  margin: 5px;
+}
+
 a#logo-link {
   display: inline-block;
   line-height: 0;
