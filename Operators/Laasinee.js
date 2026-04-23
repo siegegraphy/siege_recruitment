@@ -26,7 +26,7 @@ window.operatorData = {
 
   primaryWeapons: [
     "Weapons/UMP45.png",
-    "Weapons/FO-12.png"
+    "Weapons/FO-12.png",
     "Weapons/KS-12 KOMRAD.png"   
   ],
 
