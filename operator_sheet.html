@@ -358,6 +358,103 @@
         reader.readAsDataURL(file);
       });
     });
+
+
+    // === odtond
+
+    function exportOperatorData() {
+
+  // ===== BASIC INFO =====
+  const codename = document.getElementById("codename").textContent.trim();
+  const icon = document.getElementById("operatorIcon").getAttribute("src");
+
+  const side = {
+    text: document.getElementById("side-text").textContent.trim(),
+    image: document.getElementById("side-image").getAttribute("src")
+  };
+
+  const squad = {
+    text: document.getElementById("squad-text").textContent.trim(),
+    image: document.getElementById("squad-image").getAttribute("src")
+  };
+
+  const specialty = document.getElementById("specialty-output").textContent.trim();
+
+  const health = document.getElementById("health-image").getAttribute("src");
+  const speed = document.getElementById("speed-image").getAttribute("src");
+
+  const flag = document.getElementById("operatorFlag").getAttribute("src");
+  const country = document.getElementById("country").textContent.trim();
+
+  const realName = document.getElementById("realName").textContent.trim();
+  const dateOfBirth = document.getElementById("dateOfBirth").textContent.trim();
+  const placeOfBirth = document.getElementById("placeOfBirth").textContent.trim();
+
+  // ===== LOADOUT =====
+  function getImagesByType(type) {
+    return [...document.querySelectorAll(`.weapon-select[data-type="${type}"]`)]
+      .map(select => {
+        const img = select.parentElement.querySelector("img");
+        return img.getAttribute("src");
+      })
+      .filter(src => src && src !== "Empty.png");
+  }
+
+  const primaryWeapons = getImagesByType("primaryWeapon");
+  const secondaryWeapons = getImagesByType("secondaryWeapon");
+  const gadgets = getImagesByType("gadget");
+
+  // ===== UNIQUE ABILITY =====
+  const uniqueAbility = document.querySelector(".ability-icon").getAttribute("src");
+
+  // ===== TEXT =====
+  const description = document.getElementById("description_area").value;
+  const biography = document.getElementById("biography_area").value;
+
+  // ===== FINAL OBJECT =====
+  window.operatorData = {
+    codename,
+    icon,
+
+    side,
+
+    squad,
+
+    specialty,
+
+    health,
+    speed,
+
+    flag,
+    country,
+
+    realName,
+    dateOfBirth,
+    placeOfBirth,
+
+    primaryWeapons,
+
+    secondaryWeapons,
+
+    gadgets,
+
+    uniqueAbility,
+
+    description,
+
+    biography
+  };
+
+  console.log(window.operatorData);
+
+  // ===== OPTIONAL JSON EXPORT =====
+  const formatted = 
+`window.operatorData = ${JSON.stringify(window.operatorData, null, 2)};`;
+
+  console.log(formatted);
+
+  return formatted;
+}
   
   </script>
 
