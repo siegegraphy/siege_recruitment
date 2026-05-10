@@ -14,6 +14,10 @@
     </a>   
   </div>  
 
+  <button onclick="downloadOperatorData()">
+    DOWNLOAD OPERATOR
+  </button>
+
   <div class="double-container">
     <div class="single-container bigGap">
       <!-- codename -->
@@ -455,6 +459,32 @@
 
   return formatted;
 }
+
+    function downloadOperatorData() {
+
+  // pobiera gotowy tekst
+  const data = exportOperatorData();
+
+  // tworzy plik
+  const blob = new Blob([data], {
+    type: "application/javascript"
+  });
+
+  // tworzy link do pobrania
+  const a = document.createElement("a");
+
+  a.href = URL.createObjectURL(blob);
+
+  // nazwa pliku
+  a.download = "operatorData.js";
+
+  // kliknięcie automatyczne
+  a.click();
+
+  // cleanup
+  URL.revokeObjectURL(a.href);
+}
+
   
   </script>
 
