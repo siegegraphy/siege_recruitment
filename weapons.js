@@ -27,6 +27,7 @@ const primaryWeapons = {
       { name: 'SPEAR .308', value: 'Weapons/SPEAR .308.png' },
       { name: 'TYPE-89', value: 'Weapons/TYPE-89.png' },
       { name: 'V308', value: 'Weapons/V308.png' },
+      { name: 'XK23', value: 'Weapons/XK23.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
       { name: 'LVOA', value: 'Weapons/LVOA.png' },
