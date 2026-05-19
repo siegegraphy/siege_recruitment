@@ -20,8 +20,8 @@ window.operatorData = {
   flag: "Flags/Egypt.png",
   country: "EGYPT",
 
-  realName: "[Undefined]",
-  dateOfBirth: "[Undefined]",
+  realName: "Asim Khalil",
+  dateOfBirth: "September 9th (Age 35)",
   placeOfBirth: "Cairo, Egypt",
 
   primaryWeapons: [
