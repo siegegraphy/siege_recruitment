@@ -1,6 +1,6 @@
 window.operatorData = {
   codename: "BATTALION",
-  icon: "Icons/Battalion.png",
+  icon: "Icons/Battalion.svg",
 
   side: {
     text: "ATTACKER",
