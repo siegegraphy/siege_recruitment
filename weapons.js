@@ -110,7 +110,7 @@ const primaryWeapons = {
       { name: 'TCSG12', value: 'Weapons/TCSG12.png' },
     ],
     " -- CUSTOM WEAPON -- ": [
-      { name: 'KS-12 KOMRAD', value: 'Weapons/KS-12 KOMRAD.png' },
+      { name: 'KS-12', value: 'Weapons/KS-12.png' },
     ],
   },
   "======== SHOTGUN ========": {
