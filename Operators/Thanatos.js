@@ -17,8 +17,8 @@ window.operatorData = {
   health: "Images/healthspeedPoints1.png",
   speed: "Images/healthspeedPoints3.png",
 
-  flag: "Flags/Earth.png",
-  country: "[UNDEFINED]",
+  flag: "Flags/Saudi Arabia.png",
+  country: "SAUDI ARABIA",
 
   realName: "[Undefined]",
   dateOfBirth: "[Undefined]",
