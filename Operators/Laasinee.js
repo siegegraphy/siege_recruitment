@@ -59,7 +59,7 @@ The Spiderling cannot pick up:
 The Spiderling cannot activate or trigger the explosion of any gadget it picks up.
 - Proximity-based gadgets (e.g., Grzmot Mine, Airjab) will still trigger when an enemy enters their range.
 - Player-activated gadgets (e.g., Smoke Canister, Nitro Cell) must still be activated by the player who deployed them.
-- Timed gadgets (e.g., EMP Grenade, Frag Grenade) can be picked up if done quickly, but their timer will not stop or reset.
+- Timed gadgets (e.g., Candela, Grenade, Frag Grenade) can be picked up if done quickly, but their timer will not stop or reset.
 
 The Spiderling can carry only one item at a time and can drop it at any moment.
   
@@ -74,9 +74,10 @@ Destruction:
 Interactions: - Detected by IQ’s Electronics Detector 
 - Can be shot by Twitch’s Shock Drone 
 - Affected by EMP 
+- Destroyed by contact with electrified surfaces
 - Dokkaebi can hack into its camera feed 
 - Nøkk can remain undetected by it 
-- Can fit under door barricades and Rauora's D.O.M. Panels 
+- Can fit under door barricades and drone holes
 - Loses signal outside of buildings 
 - Can be frozen by Tubarão's Zoto Canister 
 - Can be jammed by hacked by Brava Mute’s Signal Disruptor 
@@ -88,7 +89,6 @@ Interactions: - Detected by IQ’s Electronics Detector
   - Vigil can remain undetected by it 
   - Affected by Bulletproof Camera EMP 
   - Detected by Solis’ Spec-IO Electro-Sensor 
-  - Destroyed by contact with electrified surfaces
 
 Laasinee starts with 1 Spiderling and gains another every 45 seconds.
 `,
