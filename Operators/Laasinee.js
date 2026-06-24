@@ -48,8 +48,8 @@ Laasinee deploys a spider-shaped drone that can be controlled like a regular dro
 In addition to serving as a camera, the Spiderling can pick up and transport small, soft-mounted gadgets from both defenders and attackers.
 
 Supported Gadgets 
-- Defender Gadgets: Smoke's Remote Gas Grenade, Valkyrie’s Black Eye, Echo’s Yokai, Lesion’s GU, Ela’s Grzmot Mine, Alibi’s Prisma, Kaid’s Electroclaw, Mozzie’s Pest, Wamai’s Mag-NET, Thorn’s Razorbloom, Azami’s Kiba Barrier (only if the kunai bounces off a player or gadget and lands on the ground without activating), Fenrir’s F-Natt Dread Mine, Nitro Cell, Proximity Alarm
-- Attacker Gadgets: Thatcher’s EMP Grenade, A single grenade from Fuze's Cluster Charge, Twitch’s Shock Drone, A single X-Kairos pellet from Hibana, Ying’s Candela (only if thrown), Nomad’s Airjab, Ace’s S.E.L.M.A. (only if it lands on a non-destructible surface and does not activate), Sens’ R.O.U. Projector Disc, Brava’s Kludge Drone, Frag Grenade, Stun Grenade, Smoke Grenade, Regular Drones
+- Defender Gadgets: Smoke's Remote Gas Grenade, Valkyrie’s Black Eye, Echo’s Yokai, Lesion’s GU, Ela’s Grzmot Mine, Alibi’s Prisma, Kaid’s Electroclaw, Mozzie’s Pest, Wamai’s Mag-NET, Thorn’s Razorbloom, Azami’s Kiba Barrier (only if the kunai bounces off a player or gadget and lands on the ground without activating), Fenrir’s F-Natt Dread Mine, Denari's T.R.I.P. Connector, Nitro Cell, Proximity Alarm
+- Attacker Gadgets: A single grenade from Fuze's Cluster Charge, Twitch’s Shock Drone, A single X-Kairos pellet from Hibana, Ying’s Candela (only if thrown), Nomad’s Airjab, Ace’s S.E.L.M.A. (only if it lands on a non-destructible surface and does not activate), Sens’ R.O.U. Projector Disc, Brava’s Kludge Drone, Frag Grenade, Stun Grenade, Smoke Grenade, Regular Drones
 
 The Spiderling cannot pick up:
 - Large gadgets (e.g., Frost's Welcome Mat, Jäger's ADS)
