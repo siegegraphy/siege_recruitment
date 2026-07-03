@@ -21,7 +21,7 @@ window.operatorData = {
   country: "LAOS",
 
   realName: "Nyok Lasichanh",
-  dateOfBirth: "[Undefined]",
+  dateOfBirth: "July 3rd (Age 32)",
   placeOfBirth: ", Laos",
 
   primaryWeapons: [
