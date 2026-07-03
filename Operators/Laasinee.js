@@ -20,7 +20,7 @@ window.operatorData = {
   flag: "Flags/Laos.png",
   country: "LAOS",
 
-  realName: "[Undefined]",
+  realName: "Nyok Lasichanh",
   dateOfBirth: "[Undefined]",
   placeOfBirth: ", Laos",
 
