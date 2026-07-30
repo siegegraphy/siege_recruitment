@@ -49,7 +49,7 @@ Horus has a remote sniper positioned outside the map, which effectively blocks a
 
 Once a target is marked, the remote sniper will lock onto it after 10 seconds, and a red line will appear, warning attackers. Any attacker who crosses the line will be shot by the sniper, entering a down-but-not-out state regardless of their health. If the attacker was already down-but-not-out, they will be eliminated instead. After a shot is fired, Falcon has a 5-second cooldown before it can fire again.
 
-Horus can change the sniper's target point at any moment, but after doing so, he must wait another 10 seconds for the Falcon system to reposition. The Falcon system is invulnerable, non-physical, and cannot be destroyed. Its only representation is the red line showing the shot's trajectory.
+Horus can change the sniper's target point at any moment, but after doing so, he must wait another 10 seconds for the Falcon system to reposition. The Falcon system is invulnerable, non-physical, and cannot be destroyed (similar to Lion's drone). Its only visible representation is the red line indicating the shot's trajectory.
 
 The sniper's shot can be blocked by a shield facing the direction of the incoming shot. However, the attacker's shield will be knocked back, similar to a melee attack. Throwing an object into the sniper's laser will trigger the shot. The remote sniper remains active even if Horus is eliminated, but its position cannot be changed afterward.
 
