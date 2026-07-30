@@ -46,7 +46,7 @@ Goathead throws a disc that bounces off walls. Upon landing on a flat surface, i
   
 The tracker effect is not time-limited and remains active until the affected defender manually removes it by holding a key and going through the animation of detaching the tracker from their clothes. The disc is fully destructible and can be shot during a brief window of time between landing and activation.
   
-Additional Notes: 
+Interactions:
 - Intercepted by Jäger’s ADS and Wamai’s Mag-Net. 
 - Destroyed upon contact with electrified surfaces, Surya Gate or the T.R.I.P. Connector's laser.
 - Can be destroyed by Evil Eye’s lasers.
