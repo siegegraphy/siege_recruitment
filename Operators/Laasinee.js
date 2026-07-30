@@ -22,7 +22,7 @@ window.operatorData = {
 
   realName: "Nyok Lasichanh",
   dateOfBirth: "July 3rd (Age 32)",
-  placeOfBirth: "Pakxe, Laos",
+  placeOfBirth: "Pakse, Laos",
 
   primaryWeapons: [
     "Weapons/UMP45.png",
