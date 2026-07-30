@@ -61,7 +61,7 @@ Interactions:
 - Tubarão’s Zoto Canister will temporarily freeze the device.
 - Detectable by IQ.
 - Destroyed if hacked by Brava.
-- Doorways and windows created by P.A.L.C. interact with: Wooden Barricade, Deployable Shield, Castle Barricade, Kapkan EDDs, Osa’s Talon Shield, Aruni’s Surya Gate, Rauora’s D.O.M. Panel, and Skopós’ Inactive Robot Shield.
+- Doorways and windows created by P.A.L.C. interact with: Wooden Barricade, Deployable Shield, Castle Barricade, Kapkan EDDs, Clash's Shield, Amaru's Hook, Aruni’s Surya Gate, Osa’s Talon Shield, Rauora’s D.O.M. Panel, and Skopós’ Inactive Robot Shield.
 `,
 
   biography: ``
