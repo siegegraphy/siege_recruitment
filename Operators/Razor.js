@@ -20,9 +20,9 @@ window.operatorData = {
   flag: "Flags/Indonesia.png",
   country: "INDONESIA",
 
-  realName: "[Undefined]",
-  dateOfBirth: "[Undefined]",
-  placeOfBirth: "[Undefined]",
+  realName: "Rizky Hidayat",
+  dateOfBirth: "July 30th (Age 37)",
+  placeOfBirth: "Yogyakarta, Indonesia",
 
   primaryWeapons: [
     "Weapons/SCORPION EVO 3 A1.png",
