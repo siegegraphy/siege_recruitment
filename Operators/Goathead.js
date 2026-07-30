@@ -49,7 +49,7 @@ The tracker effect is not time-limited and remains active until the affected def
 Interactions:
 - Intercepted by Jäger’s ADS and Wamai’s Mag-Net. 
 - Destroyed upon contact with electrified surfaces, Surya Gate, T.R.I.P. Connector laser.
-- Can be destroyed by Twitch’s, Zero’s and Maestro’s gadgets lasers.
+- Can be destroyed by Twitch’s, Zero’s and Maestro’s gadget lasers.
 - If the disc lands within Mute’s jammer range, it will still release trackers due to its mechanical operation. However, defenders who are hit by a marker while within the jammer’s radius can move without being pinged. 
 - The disc can be frozen by Tubarão, and frozen defenders cannot be tracked. 
 - The tracker cannot attach to Clash if the line of sight to her body is blocked by her shield. 
