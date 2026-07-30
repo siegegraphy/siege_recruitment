@@ -47,12 +47,13 @@ Goathead throws a disc that bounces off walls. Upon landing on a flat surface, i
 The tracker effect is not time-limited and remains active until the affected defender manually removes it by holding a key and going through the animation of detaching the tracker from their clothes. The disc is fully destructible and can be shot during a brief window of time between landing and activation.
   
 Additional Notes: 
-- The disc can be intercepted by Jäger’s ADS and Wamai’s Mag-Net. 
-- It is destroyed upon contact with electrified surfaces. 
+- Intercepted by Jäger’s ADS and Wamai’s Mag-Net. 
+- Destroyed upon contact with electrified surfaces, Surya Gate or the T.R.I.P. Connector's laser.
+- Can be destroyed by Evil Eye’s lasers.
 - If the disc lands within Mute’s jammer range, it will still release trackers due to its mechanical operation. However, defenders who are hit by a marker while within the jammer’s radius can move without being pinged. 
 - The disc can be frozen by Tubarão, and frozen defenders cannot be tracked. 
-- The disc is destroyed upon contact with a Surya Gate. 
 - The tracker cannot attach to Clash if the line of sight to her body is blocked by her shield. 
+- Detected by Solis’ SPEC-IO Sensor.
 - A tracker that hits one of Skopós' robots will only mark that specific robot, similar to how Jackal works. If an inactive robot is within range of the activated disc, Skopós will acquire the tracker effect once switched to that robot. 
 - Similar to how attackers are pinged when interacting with Alibi's Prisma while using drones, if Prisma is within range of the disc during activation, Goathead will be marked.
 `,
