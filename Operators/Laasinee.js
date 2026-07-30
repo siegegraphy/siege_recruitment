@@ -44,12 +44,12 @@ window.operatorData = {
 
   description: `Unique Ability: Spiderling Mine Transporter
 
-Laasinee deploys a spider-shaped drone that can be controlled like a regular drone. It can move on any surface, including floors, walls, ceilings, and furniture. However, it cannot jump and lacks a speed boost function like standard drones.
+Laasinee deploys a spider-shaped drone that can be controlled like a regular drone. It can move on any surface, including floors, walls, ceilings, and furniture.
 In addition to serving as a camera, the Spiderling can pick up and transport small, soft-mounted gadgets from both defenders and attackers.
 
 Supported Gadgets 
-- Defender Gadgets: Smoke's Remote Gas Grenade, Valkyrie’s Black Eye, Echo’s Yokai, Lesion’s GU, Ela’s Grzmot Mine, Alibi’s Prisma, Kaid’s Electroclaw, Mozzie’s Pest, Wamai’s Mag-NET, Thorn’s Razorbloom, Azami’s Kiba Barrier (only if the kunai bounces off a player or gadget and lands on the ground without activating), Fenrir’s F-Natt Dread Mine, Denari's T.R.I.P. Connector, Nitro Cell, Proximity Alarm
-- Attacker Gadgets: A single grenade from Fuze's Cluster Charge, Twitch’s Shock Drone, A single X-Kairos pellet from Hibana, Ying’s Candela (only if thrown), Nomad’s Airjab, Ace’s S.E.L.M.A. (only if it lands on a non-destructible surface and does not activate), Sens’ R.O.U. Projector Disc, Brava’s Kludge Drone, Frag Grenade, Stun Grenade, Smoke Grenade, Regular Drones
+- Defender Gadgets: Smoke's Remote Gas Grenade, Valkyrie’s Black Eye, Echo’s Yokai, Lesion’s GU, Ela’s Grzmot Mine, Alibi’s Prisma, Kaid’s Electroclaw, Mozzie’s Pest, Wamai’s Mag-NET, Thorn’s Razorbloom, Azami’s Kiba Barrier (only if the kunai bounces off a player or gadget and lands on the ground without activating), Fenrir’s F-Natt Dread Mine, Tubarão's Zoto Canister (if caught mid-air before releasing the freeze effect), Denari's T.R.I.P. Connector, Nitro Cell, Proximity Alarm
+- Attacker Gadgets: A single grenade from Fuze's Cluster Charge, Twitch’s Shock Drone, A single X-Kairos pellet from Hibana, Ying’s Candela (only if thrown), Nomad’s Airjab, Ace’s S.E.L.M.A. (only if it lands on a non-destructible surface and does not activate), Sens’ R.O.U. Projector Disc, Grim's Hive (before activation), Brava’s Kludge Drone, Frag Grenade, Stun Grenade, Smoke Grenade, Regular Drones
 
 The Spiderling cannot pick up:
 - Large gadgets (e.g., Frost's Welcome Mat, Jäger's ADS)
@@ -59,7 +59,7 @@ The Spiderling cannot pick up:
 The Spiderling cannot activate or trigger the explosion of any gadget it picks up.
 - Proximity-based gadgets (e.g., Grzmot Mine, Airjab) will still trigger when an enemy enters their range.
 - Player-activated gadgets (e.g., Smoke Canister, Nitro Cell) must still be activated by the player who deployed them.
-- Timed gadgets (e.g., Candela, Grenade, Frag Grenade) can be picked up if done quickly, but their timer will not stop or reset.
+- Time-based gadgets (e.g., Candelas, Smoke Grenades, Frag Grenades) can be picked up before detonation. Their timers stop and reset upon release.
 
 The Spiderling can carry only one item at a time and can drop it at any moment.
   
@@ -71,9 +71,11 @@ Destruction:
   - If the gadget is destroyed (e.g., shot), the Spiderling remains intact. 
   - If the Spiderling is destroyed, the gadget is dropped on the ground.
 
-Interactions: - Detected by IQ’s Electronics Detector 
-- Can be shot by Twitch’s Shock Drone 
-- Affected by EMP 
+Interactions: 
+- Detected by IQ’s Electronics Detector
+- Destroyed upon contact with electrified surfaces, Surya Gate, T.R.I.P. Connector laser.
+- Can be destroyed by Twitch’s, Zero’s and Maestro’s gadget lasers.
+- Affected by EMP and Zoto Canister.
 - Destroyed by contact with electrified surfaces
 - Dokkaebi can hack into its camera feed 
 - Nøkk can remain undetected by it 
@@ -85,8 +87,8 @@ Interactions: - Detected by IQ’s Electronics Detector
 - Can be hacked by Brava’s Kludge Drone and if so: 
   - Can be hacked back by Mozzie’s Pest 
   - Can be jammed by Mute’s Signal Disruptor 
-  - Cannot see through Observation Blockers 
   - Vigil can remain undetected by it 
+  - Cannot see through Observation Blockers 
   - Affected by Bulletproof Camera EMP 
   - Detected by Solis’ Spec-IO Electro-Sensor 
 
