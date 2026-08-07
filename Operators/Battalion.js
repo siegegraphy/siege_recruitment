@@ -20,7 +20,7 @@ window.operatorData = {
   flag: "Flags/Dominican Republic.png",
   country: "DOMINICAN REPUBLIC",
 
-  realName: "[Undefined]",
+  realName: "Felipe Morales",
   dateOfBirth: "[Undefined]",
   placeOfBirth: "Santo Domingo, Dominican Republic",
 
