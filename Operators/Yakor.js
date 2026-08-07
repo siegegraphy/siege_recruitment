@@ -20,9 +20,9 @@ window.operatorData = {
   flag: "Flags/Kazakhstan.png",
   country: "KAZAKHSTAN",
 
-  realName: "[Undefined]",
-  dateOfBirth: "[Undefined]",
-  placeOfBirth: "Kazakhstan",
+  realName: "Kuanysh Ibraev",
+  dateOfBirth: "August 7th (Age 33)",
+  placeOfBirth: "Aktau, Kazakhstan",
 
   primaryWeapons: [
     "Weapons/ARX200.png",
