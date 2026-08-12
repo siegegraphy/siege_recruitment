@@ -55,7 +55,7 @@ Once the shape is chosen, Razor deploys the P.A.L.C. on the ground in front of a
 Razor starts with 3 P.A.L.C. devices.
 
 Interactions:
-- P.A.L.C. can be destroyed by any source of gadget destruction.
+- P.A.L.C. can be destroyed by bullets, explosions, melee attacks, Twitch’s, Zero’s or Maestro’s lasers and electricity.
 - EMP temporarily disables the device, but it resumes cutting once the effect ends.
 - A Mute Jammer hacked by Brava will disable the device.
 - Tubarão’s Zoto Canister will temporarily freeze the device.
