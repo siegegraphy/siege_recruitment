@@ -45,8 +45,8 @@ window.operatorData = {
   description: `Portable Automatic Laser Cutter - P.A.L.C.
 
 Razor carries a device that, once deployed, cuts defined shapes into soft or reinforced walls, allowing for new lines of sight or entry points. Before placing the device, the player selects the cutting pattern from the available options:
-  - Large Hole - removes a section of the wall, creating an opening that can be crouched through or vaulted, placed anywhere on the wall. 
-  - Fire Hole - cuts a horizontal slit too small for a player to pass through, which can be placed anywhere on the wall. 
+  - Large Hole - removes a section of the wall, creating an opening large enough to crouch through or vault through. It can be placed anywhere on the wall and is approximately the size of a secondary hard breach.
+  - Fire Hole - cuts a horizontal slit that is too small for a player to pass through. It can be placed anywhere on the wall and is approximately the size of a Mira window.
   - Passage - creates either a doorway or a window (depending on whether the player is looking down or straight ahead). Unlike the previous options, passages always appear in the center of the wall. These openings behave like standard ones: they can be barricaded, blocked with a deployable shield, or combined with the abilities of operators such as Castle, Kapkan, or Aruni.
  *- P.A.L.C. can also be used on hatches, completely destroying them regardless of the selected mode.
 
