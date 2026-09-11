@@ -1,6 +1,6 @@
 window.operatorData = {
-  codename: "REDGIE",
-  icon: "Icons/Redgie.png",
+  codename: "BITE",
+  icon: "Icons/Bite.png",
 
   side: {
     text: "ATTACKER",
