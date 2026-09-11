@@ -20,9 +20,9 @@ window.operatorData = {
   flag: "Flags/Saudi Arabia.png",
   country: "SAUDI ARABIA",
 
-  realName: "[Undefined]",
+  realName: "Mishaal Nassar",
   dateOfBirth: "[Undefined]",
-  placeOfBirth: "[Undefined]",
+  placeOfBirth: "Hail, Saudi Arabia",
 
   primaryWeapons: [
     "Weapons/UZK50GI.png",
