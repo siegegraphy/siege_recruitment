@@ -8,7 +8,7 @@ window.operatorData = {
   },
 
   squad: {
-    text: "RAINBOW",
+    text: "STRENGTH IN ARMS",
     image: "Images/strengthinarms.png"
   },
 
